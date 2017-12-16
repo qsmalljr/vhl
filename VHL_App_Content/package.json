@@ -4,7 +4,10 @@
   "readme": "NativeScript Application",
   "repository": "<fill-your-repository-here>",
   "nativescript": {
-    "id": "org.nativescript.VHLAppContent"
+    "id": "org.nativescript.VHLAppContent",
+    "tns-android": {
+      "version": "3.3.1"
+    }
   },
   "scripts": {
     "lint": "eslint \"app/**/*.js\""
