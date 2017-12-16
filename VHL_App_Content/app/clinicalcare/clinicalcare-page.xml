@@ -17,7 +17,7 @@
             tap="onDrawerButtonTap"
             ios.position="left">
         </ActionItem>
-        <Label class="action-bar-title" text="Search"></Label>
+        <Label class="action-bar-title" text="Clinical Care"></Label>
     </ActionBar>
 
     <!--
@@ -47,7 +47,7 @@
                 Learn more about custom components and how they can be used in this documentation article:
                 http://docs.nativescript.org/ui/basics#custom-components
                 -->
-                <myDrawer:MyDrawer selectedPage="Search"/>
+                <myDrawer:MyDrawer selectedPage="ClinicalCare"/>
             </StackLayout>
         </nsDrawer:RadSideDrawer.drawerContent>
 

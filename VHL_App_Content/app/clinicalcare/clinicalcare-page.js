@@ -1,6 +1,6 @@
 const frameModule = require("ui/frame");
 
-const SearchViewModel = require("./search-view-model");
+const ClinicalCareViewModel = require("./search-view-model");
 
 /* ***********************************************************
 * Use the "onNavigatingTo" handler to initialize the page binding context.
