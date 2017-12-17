@@ -57,15 +57,16 @@
         Always wrap content in a layout component.
         -->
         <nsDrawer:RadSideDrawer.mainContent>
-              <ListView class="list-group" items="{{ sections }}" itemTap="{{ onItemTap }}" style="height:10000px">
+          <Scrollable>
+              <ListView class="list-group" items="{{ sections }}" itemTap="{{ onButtonTap }}" style="height:10000px">
                 <ListView.itemTemplate>
                   <FlexboxLayout flexDirection="row" class="list-group-item">
                     <Label text="{{ imageSrc }}" class="thumb img-circle" fontWeight ="bold"/>
                     <Label text="{{ name }}" class="list-group-item-heading" horizontalAlignment ="center" verticalAlignment="center" style="width: 60%" />
-                    <Button text="Button" tap="{{ onButtonTap }}" />
                   </FlexboxLayout>
                 </ListView.itemTemplate>
               </ListView>
+          </Scrollable>
         </nsDrawer:RadSideDrawer.mainContent>
     </nsDrawer:RadSideDrawer>
 </Page>
