@@ -57,7 +57,7 @@
         -->
         <nsDrawer:RadSideDrawer.mainContent>
           <StackLayout>
-            <WebView height="1200px" src="https://www2.ed.gov/parents/academic/help/homework/homework.pdf" />
+            <WebView height="1200px" src="https://www.google.com" />
           </StackLayout>
         </nsDrawer:RadSideDrawer.mainContent>
     </nsDrawer:RadSideDrawer>

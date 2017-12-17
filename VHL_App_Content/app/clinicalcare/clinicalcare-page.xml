@@ -60,14 +60,14 @@
 			
 				<Button style="background-color:#46BBE7;" text="CCC Feedback Form"/>
 				
-				<TabView height="300px">
+				<TabView height="11111100px">
 					<TabView.items>
 						<TabViewItem title="US Comprehensive">
-							<TabViewItem.view>
-								<StackLayout orientation="vertical">
+							<TabViewItem.view textWrap="true">
+								<StackLayout textWrap="true"  orientation="vertical">
 									<Label text="CALIFORNIA" />
-									<Label text="Stanford Hospital and Clinics/Stanford University School of Medicine"/>
-									<Label text="Contact: Vee Vo, Clinic Coordinator"/>
+									<Label textWrap="true" text="Stanford Hospital and Clinics/Stanford University School of Medicine"/>
+									<Label textWrap="true" text="Contact: Vee Vo, Clinic Coordinator"/>
 									<Label text="Tel: 650.736.0262; Fax: 650.495.6813"/>
 									<Label text="E-mail: veevo@stanfordhealthcare.org"/>
 									<Label text="Website" />
