@@ -1,26 +1,22 @@
 const observableModule = require("data/observable");
+var utilsModule = require("tns-core-modules/utils/utils");
 
 function HandbookViewModel() {
     const viewModel = observableModule.fromObject({
-        countries: [
-            { name: "Australia", imageSrc: "https://play.nativescript.org/dist/assets/img/flags/au.png" },
-            { name: "Belgium", imageSrc: "https://play.nativescript.org/dist/assets/img/flags/be.png" },
-            { name: "Bulgaria", imageSrc: "https://play.nativescript.org/dist/assets/img/flags/bg.png" },
-            { name: "Canada", imageSrc: "https://play.nativescript.org/dist/assets/img/flags/ca.png" },
-            { name: "Switzerland", imageSrc: "https://play.nativescript.org/dist/assets/img/flags/ch.png" },
-            { name: "China", imageSrc: "https://play.nativescript.org/dist/assets/img/flags/cn.png" },
-            { name: "Czech Republic", imageSrc: "https://play.nativescript.org/dist/assets/img/flags/cz.png" },
-            { name: "Germany", imageSrc: "https://play.nativescript.org/dist/assets/img/flags/de.png" },
-            { name: "Spain", imageSrc: "https://play.nativescript.org/dist/assets/img/flags/es.png" },
-            { name: "Ethiopia", imageSrc: "https://play.nativescript.org/dist/assets/img/flags/et.png" },
-            { name: "Croatia", imageSrc: "https://play.nativescript.org/dist/assets/img/flags/hr.png" },
-            { name: "Hungary", imageSrc: "https://play.nativescript.org/dist/assets/img/flags/hu.png" },
-            { name: "Italy", imageSrc: "https://play.nativescript.org/dist/assets/img/flags/it.png" },
-            { name: "Jamaica", imageSrc: "https://play.nativescript.org/dist/assets/img/flags/jm.png" },
-            { name: "Romania", imageSrc: "https://play.nativescript.org/dist/assets/img/flags/ro.png" },
-            { name: "Russia", imageSrc: "https://play.nativescript.org/dist/assets/img/flags/ru.png" },
-            { name: "United States", imageSrc: "https://play.nativescript.org/dist/assets/img/flags/us.png" },
+        sections: [
+            { name: "What is VHL?", imageSrc: "1" },
+            { name: "Possible VHL Manifestations", imageSrc: "2" },
+            { name: "Healthy Living for the VHL Family", imageSrc: "3" },
+            { name: "Discussing VHL with Your Family", imageSrc: "4" },
+            { name: "VHL Research", imageSrc: "5" },
+            { name: "Glossary of Medical Terms", imageSrc: "6" },
+            { name: "VHL Support Resources", imageSrc: "7" },,
         ],
+
+        onButtonTap: function () {
+            utilsModule.openUrl("https://google.com")
+        },
+
     });
 
     return viewModel;
