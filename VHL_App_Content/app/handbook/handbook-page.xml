@@ -57,7 +57,6 @@
         Always wrap content in a layout component.
         -->
         <nsDrawer:RadSideDrawer.mainContent>
-          <ScrollView>
             <StackLayout>
               <ListView class="list-group" items="{{ sections }}" itemTap="{{ onButtonTap }}" style="height:10000px">
                 <ListView.itemTemplate>
@@ -68,7 +67,6 @@
                 </ListView.itemTemplate>
               </ListView>
             </StackLayout>
-          </ScrollView>
         </nsDrawer:RadSideDrawer.mainContent>
     </nsDrawer:RadSideDrawer>
 </Page>
