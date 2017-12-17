@@ -4,7 +4,7 @@ Feel free to customize layouts and components to change how your app drawer look
 -->
 <GridLayout rows="auto, *" class="sidedrawer sidedrawer-left" loaded="onLoaded"
     xmlns:myDrawer="shared/my-drawer">
-    <StackLayout class="sidedrawer-header">
+    <StackLayout style="background-color:#0B92D1;">
         <Label class="sidedrawer-header-image fa" text="&#xf2bd;" />
         <Label class="sidedrawer-header-brand" text="User Name" />
         <Label class="footnote" text="username@mail.com" />

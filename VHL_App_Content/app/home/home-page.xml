@@ -18,7 +18,11 @@
             tap="onDrawerButtonTap"
             ios.position="left">
         </ActionItem>
-        <Label class="action-bar-title" text="Home"></Label>
+		
+		<StackLayout orientation="horizontal" horizontalAlignment="right" style="margin-right:10;">
+			<Button width="135" class="donate-button" text="Donate" style="margin-right:20;"/>
+				<Image src="~/images/logo-header.png" style="width:auto; height:50;"/>
+		</StackLayout>
     </ActionBar>
 
     <!--
@@ -64,6 +68,7 @@
 					<Label class="home-block-title" text="What is VHL?"/>
 					<Label class="home-block-content" textWrap="true" text="Von Hippel-Lindau (VHL) is a genetic condition involving the abnormal growth of blood vessels in up to 10 parts of the body. It is caused by a flaw in one gene, the VHL gene, which regulates cell growth causing patients to battle a series of tumors throughout their life." />
 					<Button borderWidth="1" borderColor="white" class="home-block-button" border="" text="LEARN MORE »"/>
+
 				</StackLayout>
 			
 				<StackLayout class="home-block" orientation="vertical" style="background-color:#46BBE7;">
@@ -84,13 +89,14 @@
 					<Button borderWidth="1" borderColor="white" style="background-color:#FFA13B;" class="home-block-button" border="" text="LEARN MORE »"/>
 				</StackLayout>
 				
-				<StackLayout class="home-block" orientation="vertical" style="background-color:#00BCB4;">
-					<Label class="home-block-title" textWrap="true" text="Resources for Professionals"/>
-					<Label class="home-block-content" textWrap="true" text="The VHL Alliance is a major resource for VHL diagnosis, screening and treatment. The “Professionals” section contains a wealth of information for health professionals seeking to know more about von Hippel-Lindau disease." />
-					<Button borderWidth="1" borderColor="white" style="background-color:#00BCB4;" class="home-block-button" border="" text="LEARN MORE »"/>
+				<StackLayout class="home-block" orientation="vertical" style="background-color:#F66C54;">
+					<Label class="home-block-title" textWrap="true" text="I want to help."/>
+					<Label class="home-block-content" textWrap="true" text="It is only though the generosity of our supporters and our volunteers that we can offer so many different programs. We are asking you to join us and continue your support." />
+					<Button borderWidth="1" borderColor="white" style="background-color:#F66C54;" class="home-block-button" border="" text="LEARN MORE »"/>
 				</StackLayout>
 			</StackLayout>
 		</ScrollView>
+		
         </nsDrawer:RadSideDrawer.mainContent>
     </nsDrawer:RadSideDrawer>
 </Page>
