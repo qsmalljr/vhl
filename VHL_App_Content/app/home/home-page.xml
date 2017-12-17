@@ -78,6 +78,17 @@
 					<Button borderWidth="1" borderColor="white" style="background-color:#00BCB4;" class="home-block-button" border="" text="LEARN MORE »"/>
 				</StackLayout>
 			
+				<StackLayout class="home-block" orientation="vertical" style="background-color:#FFA13B;">
+					<Label class="home-block-title" textWrap="true" text="Research"/>
+					<Label class="home-block-content" textWrap="true" text="The VHL Alliance is a leading funder of VHL research with over $1.7 million granted to support studies designed to find a cure. While these funds have not yet uncovered an effective pharmacological treatment for VHL, the supported research has resulted in approval of multiple cancer drugs for other cancers including kidney and breast cancers." />
+					<Button borderWidth="1" borderColor="white" style="background-color:#FFA13B;" class="home-block-button" border="" text="LEARN MORE »"/>
+				</StackLayout>
+				
+				<StackLayout class="home-block" orientation="vertical" style="background-color:#00BCB4;">
+					<Label class="home-block-title" textWrap="true" text="Resources for Professionals"/>
+					<Label class="home-block-content" textWrap="true" text="The VHL Alliance is a major resource for VHL diagnosis, screening and treatment. The “Professionals” section contains a wealth of information for health professionals seeking to know more about von Hippel-Lindau disease." />
+					<Button borderWidth="1" borderColor="white" style="background-color:#00BCB4;" class="home-block-button" border="" text="LEARN MORE »"/>
+				</StackLayout>
 			</StackLayout>
 		</ScrollView>
         </nsDrawer:RadSideDrawer.mainContent>
