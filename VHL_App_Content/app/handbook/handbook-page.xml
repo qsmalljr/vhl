@@ -63,11 +63,10 @@
                   <FlexboxLayout flexDirection="row" class="list-group-item">
                     <Label text="{{ imageSrc }}" class="thumb img-circle" fontWeight ="bold"/>
                     <Label text="{{ name }}" class="list-group-item-heading" horizontalAlignment ="center" verticalAlignment="middle" style="width: 60%" />
-                    
-                    <WebView height="1200px" src="~/pdfs/CompleteHandbook.pdf" />
                   </FlexboxLayout>
                 </ListView.itemTemplate>
               </ListView>
+              <WebView height="1200px" src="~/handbook/pdfs/CompleteHandbook.pdf" />
             </StackLayout>
         </nsDrawer:RadSideDrawer.mainContent>
     </nsDrawer:RadSideDrawer>
