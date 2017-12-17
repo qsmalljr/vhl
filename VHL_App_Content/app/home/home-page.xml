@@ -57,15 +57,29 @@
         Always wrap content in a layout component.
         -->
         <nsDrawer:RadSideDrawer.mainContent>
+		<ScrollView>
             <StackLayout orientation="vertical">
 			
 				<StackLayout class="home-block" orientation="vertical">
 					<Label class="home-block-title" text="What is VHL?"/>
 					<Label class="home-block-content" textWrap="true" text="Von Hippel-Lindau (VHL) is a genetic condition involving the abnormal growth of blood vessels in up to 10 parts of the body. It is caused by a flaw in one gene, the VHL gene, which regulates cell growth causing patients to battle a series of tumors throughout their life." />
-					<Button class="home-block-button" text="LEARN MORE »"/>
+					<Button borderWidth="1" borderColor="white" class="home-block-button" border="" text="LEARN MORE »"/>
+				</StackLayout>
+			
+				<StackLayout class="home-block" orientation="vertical" style="background-color:#46BBE7;">
+					<Label class="home-block-title" textWrap="true" text="I have VHL. What can I do?"/>
+					<Label class="home-block-content" textWrap="true" text="See the many activities and opportunities for learning and connecting with others dealing with VHL, whether they be patients, family members, caregivers, or friends." />
+					<Button borderWidth="1" borderColor="white" style="background-color:#46BBE7;" class="home-block-button" border="" text="LEARN MORE »"/>
+				</StackLayout>
+			
+				<StackLayout class="home-block" orientation="vertical" style="background-color:#00BCB4;">
+					<Label class="home-block-title" textWrap="true" text="Resources for Professionals"/>
+					<Label class="home-block-content" textWrap="true" text="The VHL Alliance is a major resource for VHL diagnosis, screening and treatment. The “Professionals” section contains a wealth of information for health professionals seeking to know more about von Hippel-Lindau disease." />
+					<Button borderWidth="1" borderColor="white" style="background-color:#00BCB4;" class="home-block-button" border="" text="LEARN MORE »"/>
 				</StackLayout>
 			
 			</StackLayout>
+		</ScrollView>
         </nsDrawer:RadSideDrawer.mainContent>
     </nsDrawer:RadSideDrawer>
 </Page>
