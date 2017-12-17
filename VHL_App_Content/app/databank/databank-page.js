@@ -1,6 +1,6 @@
 const frameModule = require("ui/frame");
 
-const FeaturedViewModel = require("./featured-view-model");
+const DatabankViewModel = require("./databank-view-model");
 
 /* ***********************************************************
 * Use the "onNavigatingTo" handler to initialize the page binding context.
@@ -16,7 +16,7 @@ function onNavigatingTo(args) {
     }
 
     const page = args.object;
-    page.bindingContext = new FeaturedViewModel();
+    page.bindingContext = new DatabankViewModel();
 }
 
 /* ***********************************************************

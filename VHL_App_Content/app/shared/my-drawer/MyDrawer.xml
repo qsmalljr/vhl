@@ -18,14 +18,14 @@ Feel free to customize layouts and components to change how your app drawer look
                 <Label row="0" col="1" text="Home" class="p-r-10" />
             </GridLayout>
 
-            <GridLayout columns="auto, *" class="{{ 'sidedrawer-list-item' + (selectedPage === 'Browse' ? ' selected': '') }}"
-                route="browse/browse-page" tap="onNavigationItemTap">
+            <GridLayout columns="auto, *" class="{{ 'sidedrawer-list-item' + (selectedPage === 'Handbook' ? ' selected': '') }}"
+                route="handbook/handbook-page" tap="onNavigationItemTap">
                 <Label row="0" col="0" text="&#xf1ea;" class="fa" />
                 <Label row="0" col="1" text="Handbook" class="p-r-10" />
             </GridLayout>
 
           <GridLayout columns="auto, *" class="{{ 'sidedrawer-list-item' + (selectedPage === 'Databank' ? ' selected': '') }}"
-              route="featured/featured-page" tap="onNavigationItemTap">
+              route="databank/databank-page" tap="onNavigationItemTap">
             <Label row="0" col="0" text="&#xf1c0;" class="fa" />
             <Label row="0" col="1" text="Databank" class="p-r-10" />
           </GridLayout>
