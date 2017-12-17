@@ -57,7 +57,7 @@
         Always wrap content in a layout component.
         -->
         <nsDrawer:RadSideDrawer.mainContent>
-          <Scrollable>
+          <ScrollView>
               <ListView class="list-group" items="{{ sections }}" itemTap="{{ onButtonTap }}" style="height:10000px">
                 <ListView.itemTemplate>
                   <FlexboxLayout flexDirection="row" class="list-group-item">
@@ -66,7 +66,7 @@
                   </FlexboxLayout>
                 </ListView.itemTemplate>
               </ListView>
-          </Scrollable>
+          </ScrollView>
         </nsDrawer:RadSideDrawer.mainContent>
     </nsDrawer:RadSideDrawer>
 </Page>
