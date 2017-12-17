@@ -57,10 +57,15 @@
         Always wrap content in a layout component.
         -->
         <nsDrawer:RadSideDrawer.mainContent>
-            <GridLayout class="page-content">
-                <Label class="page-icon fa" text="&#xf015;"></Label>
-                <Label class="page-placeholder" text="<!-- penis neenis austin is a cuck -->"></Label>
-            </GridLayout>
+            <StackLayout orientation="vertical">
+			
+				<StackLayout class="home-block" orientation="vertical">
+					<Label class="home-block-title" text="What is VHL?"/>
+					<Label class="home-block-content" textWrap="true" text="Von Hippel-Lindau (VHL) is a genetic condition involving the abnormal growth of blood vessels in up to 10 parts of the body. It is caused by a flaw in one gene, the VHL gene, which regulates cell growth causing patients to battle a series of tumors throughout their life." />
+					<Button class="home-block-button" text="LEARN MORE »"/>
+				</StackLayout>
+			
+			</StackLayout>
         </nsDrawer:RadSideDrawer.mainContent>
     </nsDrawer:RadSideDrawer>
 </Page>
