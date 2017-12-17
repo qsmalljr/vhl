@@ -56,9 +56,9 @@
         Always wrap content in a layout component.
         -->
         <nsDrawer:RadSideDrawer.mainContent>
-            <GridLayout class="page-content">
-               <WebView height="1200px" src="https://www2.ed.gov/parents/academic/help/homework/homework.pdf" />
-            </GridLayout>
+          <StackLayout>
+            <WebView height="1200px" src="https://www2.ed.gov/parents/academic/help/homework/homework.pdf" />
+          </StackLayout>
         </nsDrawer:RadSideDrawer.mainContent>
     </nsDrawer:RadSideDrawer>
 </Page>
