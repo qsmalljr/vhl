@@ -3,6 +3,7 @@
     navigatingTo="onNavigatingTo"  
     xmlns:nsDrawer="nativescript-pro-ui/sidedrawer"
     xmlns:myDrawer="shared/my-drawer"
+    xmlns:pdf="nativescript-pdf-view"
     xmlns="http://www.nativescript.org/tns.xsd">
 
     <ActionBar class="action-bar">
@@ -66,6 +67,7 @@
                   </FlexboxLayout>
                 </ListView.itemTemplate>
               </ListView>
+              <pdf:PDFView src="~/pdfs/CompleteHandbook.pdf" />
             </StackLayout>
         </nsDrawer:RadSideDrawer.mainContent>
     </nsDrawer:RadSideDrawer>
