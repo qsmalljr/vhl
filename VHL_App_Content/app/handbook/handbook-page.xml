@@ -57,6 +57,7 @@
         Always wrap content in a layout component.
         -->
         <nsDrawer:RadSideDrawer.mainContent>
+		<ScrollView>
             <StackLayout>
               <ListView class="list-group" items="{{ sections }}" itemTap="{{ onButtonTap }}" style="height:10000px">
                 <ListView.itemTemplate>
@@ -66,8 +67,9 @@
                   </FlexboxLayout>
                 </ListView.itemTemplate>
               </ListView>
-              <WebView height="1200px" src="file:///handbook\pdfs\CompleteHandbook.pdf" />
+              <WebView height="1200px" src="https://www2.ed.gov/parents/academic/help/homework/homework.pdf" />
             </StackLayout>
+		</ScrollView>
         </nsDrawer:RadSideDrawer.mainContent>
     </nsDrawer:RadSideDrawer>
 </Page>

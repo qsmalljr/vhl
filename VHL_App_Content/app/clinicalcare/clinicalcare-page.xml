@@ -56,10 +56,40 @@
         Always wrap content in a layout component.
         -->
         <nsDrawer:RadSideDrawer.mainContent>
-            <GridLayout class="page-content">
-                <Label class="page-icon fa" text="&#xf002;"></Label>
-                <Label class="page-placeholder" text="<!-- Page content goes here -->"></Label>
-            </GridLayout>
+            <StackLayout>
+			
+				<Button style="background-color:#46BBE7;" text="CCC Feedback Form"/>
+				
+				<TabView height="300px">
+					<TabView.items>
+						<TabViewItem title="US Comprehensive">
+							<TabViewItem.view>
+								<StackLayout orientation="vertical">
+									<Label text="CALIFORNIA" />
+									<Label text="Stanford Hospital and Clinics/Stanford University School of Medicine"/>
+									<Label text="Contact: Vee Vo, Clinic Coordinator"/>
+									<Label text="Tel: 650.736.0262; Fax: 650.495.6813"/>
+									<Label text="E-mail: veevo@stanfordhealthcare.org"/>
+									<Label text="Website" />
+									<Label text="ADULT ONLY"/>
+								</StackLayout>
+							</TabViewItem.view>
+						</TabViewItem>
+						<TabViewItem title="US Care Centers">
+							<TabViewItem.view>
+								<Label text="Label in Tab 2" />
+							</TabViewItem.view>
+						</TabViewItem>
+						<TabViewItem title="US Care Centers">
+							<TabViewItem.view>
+								<Label text="Label in Tab 2" />
+							</TabViewItem.view>
+						</TabViewItem>
+					</TabView.items>
+				</TabView>
+				
+				
+            </StackLayout>
         </nsDrawer:RadSideDrawer.mainContent>
     </nsDrawer:RadSideDrawer>
 </Page>
