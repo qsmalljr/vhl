@@ -19,6 +19,18 @@ function onNavigatingTo(args) {
     page.bindingContext = new HandbookViewModel();
 }
 
+function onNavigationItemTap(args) {
+    const component = args.object;
+    const componentRoute = component.route;
+
+    frameModule.topmost().navigate({
+        moduleName: componentRoute,
+        transition: {
+            name: "fade"
+        }
+    });
+}
+
 /* ***********************************************************
  * According to guidelines, if you have a drawer on your page, you should always
  * have a button that opens it. Get a reference to the RadSideDrawer view and
