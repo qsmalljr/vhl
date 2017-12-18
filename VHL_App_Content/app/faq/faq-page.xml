@@ -21,7 +21,7 @@
         </ActionItem>
         <Label class="action-bar-title" text="FAQ"></Label>
     </ActionBar>
-
+11
     <!--
     RadSideDrawer is a UI component part of the Progress NativeScript UI set of components.
     Learn more about the RadSideDrawer UI component and how it can be customized in this documentation article:
@@ -58,9 +58,9 @@
         Always wrap content in a layout component.
         -->
         <nsDrawer:RadSideDrawer.mainContent>
-
-          <pdf:PDFView src="~/handbook/pdfs/CompleteHandbook.pdf" load="{{ onLoad }}" />
-        
+			
+          <pdf:PDFView src="https://www.vhl.org/wp-content/uploads/2017/06//VHL-Handbook-5.pdf" load="{{ onLoad }}" />
+      
         </nsDrawer:RadSideDrawer.mainContent>
     </nsDrawer:RadSideDrawer>
 </Page>
