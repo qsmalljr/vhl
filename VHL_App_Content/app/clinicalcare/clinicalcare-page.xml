@@ -62,20 +62,21 @@
 				
 				<TabView height="11111100px">
 					<TabView.items>
+					
 						<TabViewItem title="US Comprehensive">
 							<TabViewItem.view textWrap="true" style="float:left;">
 									<ScrollView>
 										<StackLayout>
 										  <ListView class="list-group" items="{{ sections }}" itemTap="{{ onButtonTap }}" style="height:10000px">
 											<ListView.itemTemplate>
-											  <StackLayout class="list-group-item">
-												<Label text="{{ name }}" fontWeight ="bold" style="margin-bottom:20;"/>
-												<Label text="{{ imageSrc }}" />
-												<Label text="{{ imageSrc }}" />
-												<Label text="{{ imageSrc }}" />
-												<Label text="{{ imageSrc }}" />
-												<Label text="{{ imageSrc }}" />
-												<Label text="{{ imageSrc }}" />
+											  <StackLayout class="list-group-item" textWrap="true">
+												<Label text="{{ name }}" fontWeight ="bold" style="margin-bottom:20;" textWrap="true"/>
+												<Label text="{{ desc }}" textWrap="true"/>
+												<Label text="{{ contact }}" textWrap="true"/>
+												<Label text="{{ tel }}" textWrap="true"/>
+												<Label text="{{ email }}" textWrap="true"/>
+												<Label text="{{ web }}" textWrap="true" style="text-decoration:underline;"/>
+												<Label text="{{ adult }}" textWrap="true" style="font-style:italic;"/>
 											  </StackLayout>
 											</ListView.itemTemplate>
 										  </ListView>
@@ -85,11 +86,13 @@
 
 							</TabViewItem.view>
 						</TabViewItem>
+						
 						<TabViewItem title="US Care Centers">
 							<TabViewItem.view>
 								<Label text="Label in Tab 2" />
 							</TabViewItem.view>
 						</TabViewItem>
+						
 						<TabViewItem title="US Care Centers">
 							<TabViewItem.view>
 								<Label text="Label in Tab 2" />
