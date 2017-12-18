@@ -19,16 +19,13 @@ function onNavigatingTo(args) {
     page.bindingContext = new HandbookViewModel();
 }
 
-function onNavigationItemTap(args) {
-    const component = args.object;
-    const componentRoute = component.route;
+exports.pageLoaded = function (args) {
+    var page = args.object;
+    page.bindingContext = {};
+}
 
-    frameModule.navigate({
-        moduleName: componentRoute,
-        transition: {
-            name: "fade"
-        }
-    });
+exports.tapAction = function () {
+    frameModule.topmost().navigate("databank/databank-page");
 }
 
 /* ***********************************************************
