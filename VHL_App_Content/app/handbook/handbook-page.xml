@@ -68,7 +68,6 @@
                   </FlexboxLayout>
                 </ListView.itemTemplate>
               </ListView>
-              <WebView height="1200px" src="https://www2.ed.gov/parents/academic/help/homework/homework.pdf" />
             </StackLayout>
 		</ScrollView>
         </nsDrawer:RadSideDrawer.mainContent>

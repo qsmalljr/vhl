@@ -25,7 +25,7 @@ exports.pageLoaded = function (args) {
 }
 
 exports.tapAction = function () {
-    frameModule.topmost().navigate("databank/databank-page");
+    frameModule.topmost().navigate("viewhandbookfull/viewhandbookfull-page");
 }
 
 /* ***********************************************************
