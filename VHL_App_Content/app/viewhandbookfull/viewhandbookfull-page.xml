@@ -59,7 +59,6 @@
         -->
         <nsDrawer:RadSideDrawer.mainContent>
 
-          <pdf:PDFView src="~/handbook/pdfs/CompleteHandbook.pdf" load="{{ onLoad }}" />
         
         </nsDrawer:RadSideDrawer.mainContent>
     </nsDrawer:RadSideDrawer>

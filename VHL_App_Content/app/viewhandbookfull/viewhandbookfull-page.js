@@ -1,6 +1,6 @@
 const frameModule = require("ui/frame");
 
-const ViewHandbookFullViewModel = require("./faq-view-model");
+const ViewHandbookFullViewModel = require("./viewfullhandbook-view-model");
 
 /* ***********************************************************
 * Use the "onNavigatingTo" handler to initialize the page binding context.
