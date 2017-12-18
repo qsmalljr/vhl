@@ -17,6 +17,7 @@ function HandbookViewModel() {
             utilsModule.openUrl("https://google.com")
         },
 
+
     });
 
     return viewModel;

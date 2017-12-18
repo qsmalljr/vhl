@@ -23,7 +23,7 @@ function onNavigationItemTap(args) {
     const component = args.object;
     const componentRoute = component.route;
 
-    frameModule.topmost().navigate({
+    frameModule.navigate({
         moduleName: componentRoute,
         transition: {
             name: "fade"
