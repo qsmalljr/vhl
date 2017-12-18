@@ -2,7 +2,9 @@
     navigatingTo="onNavigatingTo"  
     xmlns:nsDrawer="nativescript-pro-ui/sidedrawer"
     xmlns:myDrawer="shared/my-drawer"
-    xmlns="http://www.nativescript.org/tns.xsd">
+    xmlns:pdf="nativescript-pdf-view"
+    loaded="pageLoaded"
+    xmlns="http://schemas.nativescript.org/tns.xsd">
 
     <ActionBar class="action-bar">
         <!-- 
@@ -56,9 +58,9 @@
         Always wrap content in a layout component.
         -->
         <nsDrawer:RadSideDrawer.mainContent>
-          <StackLayout>
-            <WebView height="1200px" src="https://www.google.com" />
-          </StackLayout>
+
+          <pdf:PDFView src="https://www2.ed.gov/parents/academic/help/homework/homework.pdf" load="{{ onLoad }}" />
+        
         </nsDrawer:RadSideDrawer.mainContent>
     </nsDrawer:RadSideDrawer>
 </Page>
