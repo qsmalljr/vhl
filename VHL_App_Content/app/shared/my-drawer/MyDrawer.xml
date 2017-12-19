@@ -36,12 +36,6 @@ Feel free to customize layouts and components to change how your app drawer look
                 <Label row="0" col="1" text="Clinical Care" class="p-r-10" />
           </GridLayout>
 
-          <GridLayout columns="auto, *" class="{{ 'sidedrawer-list-item' + (selectedPage === 'MedicalTerms' ? ' selected': '') }}"
-              route="medicalterms/medicalterms-page" tap="onNavigationItemTap">
-            <Label row="0" col="0" text="&#xf02d;" class="fa" />
-            <Label row="0" col="1" text="Medical Terms" class="p-r-10" />
-          </GridLayout>
-
           <GridLayout columns="auto, *" class="{{ 'sidedrawer-list-item' + (selectedPage === 'FAQ' ? ' selected': '') }}"
               route="faq/faq-page" tap="onNavigationItemTap">
             <Label row="0" col="0" text="&#xf128;" class="fa" />
