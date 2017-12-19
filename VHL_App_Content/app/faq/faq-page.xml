@@ -58,8 +58,9 @@
         -->
         <nsDrawer:RadSideDrawer.mainContent>
 
-          <accordion:Accordion items="{{bigitems}}" itemTapped="tapped" headerTextBold="true" headerTextColor="white" headerColor="pink"  headerTextColor="blue" allowMultiple="true" id="ac" selectedIndex="1">
-            <accordion:Accordion.headerTemplate>
+          <accordion:Accordion items="{{items}}" itemTapped="tapped" headerTextBold="true" headerTextColor="white" headerColor="pink" allowMultiple="true" id="ac" selectedIndex="1">
+            
+            <accordion:Accordion.headerTemplate items ="{{myitems}}">
               <GridLayout backgroundColor="green" columns="auto,*">
                 <Label text="{{title}}"/>
                 <Label col="1" text="+"/>
@@ -74,7 +75,7 @@
             </accordion:Accordion.itemTemplate>
 
 
-            <accordion:Accordion.footerTemplate>
+            <accordion:Accordion.footerTemplate items ="{{myitems}}">
               <GridLayout backgroundColor="yellow" columns="auto,*">
                 <Label text="{{footer}}"/>
                 <Label col="1" text="-"/>
