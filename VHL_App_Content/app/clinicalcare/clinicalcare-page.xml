@@ -58,16 +58,16 @@
         <nsDrawer:RadSideDrawer.mainContent>
             <StackLayout>
 			
-				<Button style="background-color:#46BBE7;" text="CCC Feedback Form" tap="{{ onButtonTap }}"/>
+				<Button style="background-color:#46BBE7;" text="CCC Feedback Form" tap="{{  }}"/>
 				
-				<TabView height="11111100px">
+				<TabView>
 					<TabView.items>
 					
 						<TabViewItem title="US Comprehensive">
 							<TabViewItem.view textWrap="true" style="float:left;">
-									<ScrollView>
-										<StackLayout>
-										  <ListView class="list-group" items="{{ sections }}" itemTap="{{ onButtonTap }}" style="height:10000px">
+									
+										<StackLayout >
+										  <ListView class="list-group" items="{{ sections }}" itemTap="{{ onButtonTap }}" rowHeight="150">
 											<ListView.itemTemplate>
 											  <StackLayout class="list-group-item" textWrap="true">
 												<Label text="{{ name }}" fontWeight ="bold" style="margin-bottom:20;" textWrap="true"/>
@@ -82,7 +82,7 @@
 										  </ListView>
 										  <WebView height="1200px" src="https://www2.ed.gov/parents/academic/help/homework/homework.pdf" />
 										</StackLayout>
-									</ScrollView>
+									
 
 							</TabViewItem.view>
 						</TabViewItem>
