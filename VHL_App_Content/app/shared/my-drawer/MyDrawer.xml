@@ -18,6 +18,12 @@ Feel free to customize layouts and components to change how your app drawer look
                 <Label row="0" col="1" text="Home" class="p-r-10" />
             </GridLayout>
 
+          <GridLayout columns="auto, *" class="{{ 'sidedrawer-list-item' + (selectedPage === 'Calendar' ? ' selected': '') }}"
+              route="calendar/calendar-page" tap="onNavigationItemTap">
+            <Label row="0" col="0" text="[&#xf073;" class="fa" />
+            <Label row="0" col="1" text="Calendar" class="p-r-10" />
+          </GridLayout>
+
             <GridLayout columns="auto, *" class="{{ 'sidedrawer-list-item' + (selectedPage === 'Handbook' ? ' selected': '') }}"
                 route="handbook/handbook-page" tap="onNavigationItemTap">
                 <Label row="0" col="0" text="&#xf1ea;" class="fa" />
@@ -40,6 +46,12 @@ Feel free to customize layouts and components to change how your app drawer look
               route="faq/faq-page" tap="onNavigationItemTap">
             <Label row="0" col="0" text="&#xf128;" class="fa" />
             <Label row="0" col="1" text="FAQ" class="p-r-10" />
+          </GridLayout>
+
+          <GridLayout columns="auto, *" class="{{ 'sidedrawer-list-item' + (selectedPage === 'ERCard' ? ' selected': '') }}"
+            route="ercard/ercard-page" tap="onNavigationItemTap">
+            <Label row="0" col="0" text="&#xf2c3;" class="fa" />
+            <Label row="0" col="1" text="ER Card" class="p-r-10" />
           </GridLayout>
 
             <StackLayout class="hr-light"></StackLayout>
