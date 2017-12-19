@@ -17,7 +17,7 @@
             tap="onDrawerButtonTap"
             ios.position="left">
         </ActionItem>
-        <Label class="action-bar-title" text="Clinical Care"></Label>
+        <Label class="action-bar-title" text="Medical Terms"></Label>
     </ActionBar>
 
     <!--
@@ -47,7 +47,7 @@
                 Learn more about custom components and how they can be used in this documentation article:
                 http://docs.nativescript.org/ui/basics#custom-components
                 -->
-                <myDrawer:MyDrawer selectedPage="ClinicalCare"/>
+                <myDrawer:MyDrawer selectedPage="MedicalTerms"/>
             </StackLayout>
         </nsDrawer:RadSideDrawer.drawerContent>
 
@@ -56,53 +56,10 @@
         Always wrap content in a layout component.
         -->
         <nsDrawer:RadSideDrawer.mainContent>
-            <StackLayout>
-			
-				<Button style="background-color:#46BBE7;" text="CCC Feedback Form" tap="{{  }}"/>
-				
-				<TabView>
-					<TabView.items>
-					
-						<TabViewItem title="US Comprehensive">
-							<TabViewItem.view textWrap="true" style="float:left;">
-									
-										<StackLayout >
-										  <ListView class="list-group" items="{{ sections }}" itemTap="{{ onButtonTap }}" rowHeight="150">
-											<ListView.itemTemplate>
-											  <StackLayout class="list-group-item" textWrap="true">
-												<Label text="{{ name }}" fontWeight ="bold" style="margin-bottom:20;" textWrap="true"/>
-												<Label text="{{ desc }}" textWrap="true"/>
-												<Label text="{{ contact }}" textWrap="true"/>
-												<Label text="{{ tel }}" textWrap="true"/>
-												<Label text="{{ email }}" textWrap="true"/>
-												<Label text="{{ web }}" textWrap="true" style="text-decoration:underline;"/>
-												<Label text="{{ adult }}" textWrap="true" style="font-style:italic;"/>
-											  </StackLayout>
-											</ListView.itemTemplate>
-										  </ListView>
-										  <WebView height="1200px" src="https://www2.ed.gov/parents/academic/help/homework/homework.pdf" />
-										</StackLayout>
-									
-
-							</TabViewItem.view>
-						</TabViewItem>
-						
-						<TabViewItem title="US Care Centers">
-							<TabViewItem.view>
-								<Label text="Label in Tab 2" />
-							</TabViewItem.view>
-						</TabViewItem>
-						
-						<TabViewItem title="US Care Centers">
-							<TabViewItem.view>
-								<Label text="Label in Tab 2" />
-							</TabViewItem.view>
-						</TabViewItem>
-					</TabView.items>
-				</TabView>
-				
-				
-            </StackLayout>
+            <GridLayout class="page-content">
+                <Label class="page-icon fa" text="&#xf002;"></Label>
+                <Label class="page-placeholder" text="<!-- Page content goes here -->"></Label>
+            </GridLayout>
         </nsDrawer:RadSideDrawer.mainContent>
     </nsDrawer:RadSideDrawer>
 </Page>
