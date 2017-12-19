@@ -24,8 +24,8 @@ exports.pageLoaded = function (args) {
     page.bindingContext = {};
 }
 
-exports.tapAction = function () {
-    frameModule.topmost().navigate("hbsection1/hbsection1-page");
+exports.tapAction = function (args) {
+        frameModule.topmost().navigate("hbsection" + args.index + 1 + "/hbsection" + args.index + 1 + "-page");
 }
 
 /* ***********************************************************

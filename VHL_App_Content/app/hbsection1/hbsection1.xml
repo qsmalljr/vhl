@@ -59,7 +59,6 @@
         -->
         <nsDrawer:RadSideDrawer.mainContent>
 
-         <pdf:PDFView src="https://www.vhl.org/wp-content/uploads/2017/06//VHL-Handbook-5.pdf" load="{{ onLoad }}" />
         
         </nsDrawer:RadSideDrawer.mainContent>
     </nsDrawer:RadSideDrawer>

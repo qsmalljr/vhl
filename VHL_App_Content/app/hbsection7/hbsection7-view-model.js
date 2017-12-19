@@ -1,6 +1,6 @@
 const observableModule = require("data/observable");
 
-function ViewHandbookFullModel() {
+function hbsection7Model() {
     const viewModel = observableModule.fromObject({
 
     });
@@ -8,4 +8,4 @@ function ViewHandbookFullModel() {
     return viewModel;
 }
 
-module.exports = ViewHandbookFullModel;
+module.exports = hbsection7Model;
