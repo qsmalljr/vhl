@@ -59,7 +59,7 @@
         -->
         <nsDrawer:RadSideDrawer.mainContent>
 
-          <Label textWrap="true" text="Play with NativeScript!" class="h2 description-label" />
+          <pdf:PDFView src="https://www2.ed.gov/parents/academic/help/homework/homework.pdf" load="{{ onLoad }}" />
           
         </nsDrawer:RadSideDrawer.mainContent>
     </nsDrawer:RadSideDrawer>
