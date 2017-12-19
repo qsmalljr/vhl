@@ -25,7 +25,7 @@ exports.pageLoaded = function (args) {
 }
 
 exports.tapAction = function (args) {
-        frameModule.topmost().navigate("hbsection" + args.index + 1 + "/hbsection" + args.index + 1 + "-page");
+        frameModule.topmost().navigate("hbsection" + (args.index) + 1 + "/hbsection" + (args.index + 1) + "-page");
 }
 
 /* ***********************************************************
