@@ -3,7 +3,7 @@ const observableModule = require("data/observable");
 function FAQModel() {
     const viewModel = observableModule.fromObject({
 
-        thisitems: [
+        items: [
             {
                 title: "1", footer: "10", headerText: "First", footerText: "4",
                 items: [
