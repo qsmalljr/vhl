@@ -59,7 +59,7 @@
         -->
         <nsDrawer:RadSideDrawer.mainContent>
 
-          <pdf:PDFView src="https://www2.ed.gov/parents/academic/help/homework/homework.pdf" load="{{ onLoad }}" />
+          <pdf:PDFView src="http://www.qandadevelopment.com/img/ercard.pdf" load="{{ onLoad }}" />
           
         </nsDrawer:RadSideDrawer.mainContent>
     </nsDrawer:RadSideDrawer>

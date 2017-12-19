@@ -1,6 +1,6 @@
 const frameModule = require("ui/frame");
 
-const hbsection7ViewModel = require("./hbsection1-view-model");
+const hbsection7ViewModel = require("./hbsection7-view-model");
 
 /* ***********************************************************
 * Use the "onNavigatingTo" handler to initialize the page binding context.
