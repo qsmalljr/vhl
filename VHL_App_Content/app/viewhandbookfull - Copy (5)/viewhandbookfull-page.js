@@ -1,6 +1,6 @@
 const frameModule = require("ui/frame");
 
-const HandbookViewModel = require("./handbook-view-model");
+const ViewHandbookFullViewModel = require("./viewhandbookfull-view-model");
 
 /* ***********************************************************
 * Use the "onNavigatingTo" handler to initialize the page binding context.
@@ -16,16 +16,12 @@ function onNavigatingTo(args) {
     }
 
     const page = args.object;
-    page.bindingContext = new HandbookViewModel();
+    page.bindingContext = new ViewHandbookFullViewModel();
 }
 
 exports.pageLoaded = function (args) {
     var page = args.object;
     page.bindingContext = {};
-}
-
-exports.tapAction = function () {
-    frameModule.topmost().navigate("hbsection1/hbsection1-page");
 }
 
 /* ***********************************************************
