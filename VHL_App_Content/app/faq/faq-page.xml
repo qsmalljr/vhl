@@ -2,8 +2,8 @@
     navigatingTo="onNavigatingTo"  
     xmlns:nsDrawer="nativescript-pro-ui/sidedrawer"
     xmlns:myDrawer="shared/my-drawer"
-    xmlns="http://www.nativescript.org/tns.xsd"
-    xmlns:accordion="nativescript-accordion">
+    xmlns:accordion="nativescript-accordion"
+    xmlns="http://www.nativescript.org/tns.xsd">
 
     <ActionBar class="action-bar">
         <!-- 
