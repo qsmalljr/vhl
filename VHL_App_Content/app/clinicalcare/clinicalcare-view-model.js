@@ -34,10 +34,6 @@ function ClinicalCareModel() {
 				    utilsModule.openUrl(websites[args.index])
 			}
         },
-		
-		onOpenSurvey: function () {
-			utilsModule.openUrl("https://docs.google.com/forms/d/1x35igCRZFCvcaeYmY_d5M2xYW1KMUCmLvjJuSQ4ZTbc/viewform?edit_requested=true")
-		},
 	
     });
 

@@ -58,7 +58,7 @@
         <nsDrawer:RadSideDrawer.mainContent>
             <StackLayout>
 			
-				<Button style="background-color:#46BBE7;" text="CCC Feedback Form" tap="{{ onOpenSurvey }}"/>
+				<Button style="background-color:#46BBE7;" text="CCC Feedback Form" tap="{{  }}"/>
 				
 				<TabView>
 					<TabView.items>
