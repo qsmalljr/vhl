@@ -3,12 +3,16 @@ const observableModule = require("data/observable");
 function FAQModel() {
     const viewModel = observableModule.fromObject({
 
-                items: [
-                    { image: "https://prnewswire2-a.akamaihd.net/p/1893751/sp/189375100/thumbnail/entry_id/1_l5pcusxy/def_height/1024/def_width/1956/version/100011/type/2/q/100", text: "Stop" },
-                    { text: "Drop", image: "https://prnewswire2-a.akamaihd.net/p/1893751/sp/189375100/thumbnail/entry_id/1_l5pcusxy/def_height/1024/def_width/1956/version/100011/type/2/q/100" }
-                ]
-            
-        
+    
+        questions: [
+            { name: "What is VHL?", desc: "hey man vhl is actually cancer" },
+            { name: "Possible VHL Manifestations", desc: "my dad is quentin" },
+            { name: "Healthy Living for the VHL Family", desc: "3" },
+            { name: "Discussing VHL with Your Family", desc: "4" },
+            { name: "VHL Research", imageSrc: "5" },
+            { name: "Glossary of Medical Terms", desc: "6" },
+            { name: "VHL Support Resources", desc: "7" },
+        ],
 
     });
 
