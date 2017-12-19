@@ -59,7 +59,7 @@
         -->
         <nsDrawer:RadSideDrawer.mainContent>
 
-     
+          <pdf:PDFView src="http://www.qandadevelopment.com/img/section2.pdf" load="{{ onLoad }}" />
         
         </nsDrawer:RadSideDrawer.mainContent>
     </nsDrawer:RadSideDrawer>
