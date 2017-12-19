@@ -3,7 +3,8 @@
     navigatingTo="onNavigatingTo"  
     xmlns:nsDrawer="nativescript-pro-ui/sidedrawer"
     xmlns:myDrawer="shared/my-drawer"
-    xmlns="http://www.nativescript.org/tns.xsd">
+    xmlns="http://www.nativescript.org/tns.xsd"
+	xmlns:calendar="nativescript-pro-ui/calendar">
 
     <ActionBar class="action-bar">
         <!-- 
@@ -59,7 +60,7 @@
         <nsDrawer:RadSideDrawer.mainContent>
             <GridLayout class="page-content">
  
-                <Label textWrap="true" text="Play with NativeScript!" class="h2 description-label" />
+                <calendar:RadCalendar id="calendar" eventSource="{{ events }}" />
 
             </GridLayout>
         </nsDrawer:RadSideDrawer.mainContent>

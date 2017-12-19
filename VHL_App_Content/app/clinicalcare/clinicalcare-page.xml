@@ -80,7 +80,6 @@
 											  </StackLayout>
 											</ListView.itemTemplate>
 										  </ListView>
-										  <WebView height="1200px" src="https://www2.ed.gov/parents/academic/help/homework/homework.pdf" />
 										</StackLayout>
 									
 
@@ -89,11 +88,51 @@
 						
 						<TabViewItem title="US Care Centers">
 							<TabViewItem.view>
-								<Label text="Label in Tab 2" />
+								
+									<StackLayout>
+									
+										  <ListView class="list-group" items="{{ sections1 }}" itemTap="{{ onButtonTap1 }}" itemTemplateSelector="{{ selectItemTemplate }}">
+											<ListView.itemTemplates>
+												<template key="one">
+													<StackLayout textWrap="true" class="list-group-item">
+														<Label text="{{ name }}" fontWeight ="bold" style="margin-bottom:20;" textWrap="true"/>
+														<Label text="{{ desc }}" textWrap="true"/>
+														<Label text="{{ contact }}" textWrap="true"/>
+														<Label text="{{ tel }}" textWrap="true"/>
+														<Label text="{{ email }}" textWrap="true"/>
+														<Label text="{{ web }}" textWrap="true" style="text-decoration:underline;"/>
+														<Label text="{{ adult }}" textWrap="true" style="font-style:italic;"/>
+													</StackLayout>
+												</template>
+											  
+											<template key="two">
+												<StackLayout class="list-group-item" textWrap="true">
+													<Label text="{{ name }}" fontWeight ="bold" style="margin-bottom:20;" textWrap="true"/>
+													<Label text="{{ desc }}" textWrap="true"/>
+													<Label text="{{ contact }}" textWrap="true"/>
+													<Label text="{{ tel }}" textWrap="true"/>
+													<Label text="{{ email }}" textWrap="true"/>
+													<Label text="{{ web }}" textWrap="true" style="text-decoration:underline;"/>
+													<Label text="{{adult}}" textWrap="true"/>
+													
+													<Label text="{{ desc2 }}" textWrap="true"/>
+													<Label text="{{ contact2 }}" textWrap="true"/>
+													<Label text="{{ tel2 }}" textWrap="true"/>
+													<Label text="{{ email2 }}" textWrap="true"/>
+													<Label text="{{ web2 }}" textWrap="true" style="text-decoration:underline;"/>
+													<Label text="{{ adult2 }}" textWrap="true" style="font-style:italic;"/>
+												</StackLayout>
+											</template>
+											</ListView.itemTemplates>
+											
+										  </ListView>
+										  
+									</StackLayout>
+								
 							</TabViewItem.view>
 						</TabViewItem>
 						
-						<TabViewItem title="US Care Centers">
+						<TabViewItem title="International Centers">
 							<TabViewItem.view>
 								<Label text="Label in Tab 2" />
 							</TabViewItem.view>
