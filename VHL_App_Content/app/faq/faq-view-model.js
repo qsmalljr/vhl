@@ -2,8 +2,7 @@ const observableModule = require("data/observable");
 
 function FAQModel() {
     const viewModel = observableModule.fromObject({
-
-    
+ 
         questions: [
             { name: "What is VHL?", desc: "hey man vhl is actually cancer" },
             { name: "Possible VHL Manifestations", desc: "my dad is quentin" },
