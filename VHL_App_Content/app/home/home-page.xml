@@ -5,7 +5,7 @@
     xmlns:myDrawer="shared/my-drawer"
     xmlns="http://www.nativescript.org/tns.xsd">
 
-    <ActionBar class="action-bar">
+    <ActionBar class="action-bar" style="background-color:#0B92D1;">
         <!-- 
         Use the NavigationButton as a side-drawer button in Android because ActionItems are shown on the right side of the ActionBar
         -->

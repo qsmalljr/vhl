@@ -1,7 +1,11 @@
 const frameModule = require("ui/frame");
+var CalendarViewModel = require("./calendar-view-model");
+var calendarModule = require("nativescript-pro-ui/calendar");
 
-const CalendarViewModel = require("./calendar-view-model");
 
+
+
+var calendarViewModel = new CalendarViewModel();
 /* ***********************************************************
 * Use the "onNavigatingTo" handler to initialize the page binding context.
 *************************************************************/
@@ -15,9 +19,14 @@ function onNavigatingTo(args) {
         return;
     }
 
-    const page = args.object;
-    page.bindingContext = new CalendarViewModel();
+	var page = args.object;
+	page.bindingContext = calendarViewModel;
+
+	
 }
+
+
+
 
 /* ***********************************************************
  * According to guidelines, if you have a drawer on your page, you should always
@@ -31,3 +40,26 @@ function onDrawerButtonTap(args) {
 
 exports.onNavigatingTo = onNavigatingTo;
 exports.onDrawerButtonTap = onDrawerButtonTap;
+
+var page;
+
+exports.pageLoaded = function(args) {
+    page = args.object;
+    page.bindingContext = calendarViewModel;
+
+    var eventTitles = ["Lunch with Steve", "Meeting with Jane", "Q1 Recap Meeting"];
+    var events = [new calendarModule.CalendarEvent("poop", new Date(2017, 12, 19), new Date(2017,12,20))];
+
+	/*
+    var j = 1;
+    for (var i = 0; i < eventTitles.length; i++) {
+        var now = new Date();
+        var startDate = new Date(now.getFullYear(), now.getMonth(), now.getDay());
+        var endDate = new Date(now.getFullYear(), now.getMonth(), now.getDay());
+        var event = new calendarModule.CalendarEvent(eventTitles[i], startDate, endDate);
+        events.push(event);
+        j++;
+    }
+*/
+    calendarViewModel.set("events", events);
+}

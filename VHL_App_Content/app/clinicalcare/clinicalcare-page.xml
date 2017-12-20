@@ -17,6 +17,7 @@
             tap="onDrawerButtonTap"
             ios.position="left">
         </ActionItem>
+		
         <StackLayout orientation="horizontal" horizontalAlignment="right" style="margin-right:10;">
 			<Button width="135" class="donate-button" text="Donate" style="margin-right:20;"/>
 				<Image src="~/images/logo-header.png" style="width:auto; height:50;"/>

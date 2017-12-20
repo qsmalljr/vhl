@@ -1,8 +1,13 @@
-const observableModule = require("data/observable");
+var observableModule = require("data/observable");
 
 function CalendarViewModel() {
+	
+	var now = new Date();
     const viewModel = observableModule.fromObject({
+		
+		events:[],
 
+		
     });
 
     return viewModel;
