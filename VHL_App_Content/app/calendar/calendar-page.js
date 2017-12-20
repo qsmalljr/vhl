@@ -1,7 +1,6 @@
 const frameModule = require("ui/frame");
-
 var CalendarViewModel = require("./calendar-view-model");
-var calendarModule = require("nativescript-telerik-ui-pro/calendar");
+var calendarModule = require("nativescript-pro-ui/calendar");
 
 
 
@@ -43,24 +42,24 @@ exports.onNavigatingTo = onNavigatingTo;
 exports.onDrawerButtonTap = onDrawerButtonTap;
 
 var page;
-var pageData = new Observable();
 
-exports.pageLoaded = function (args) {
+exports.pageLoaded = function(args) {
     page = args.object;
-    page.bindingContext = pageData;
+    page.bindingContext = calendarViewModel;
 
     var eventTitles = ["Lunch with Steve", "Meeting with Jane", "Q1 Recap Meeting"];
-    var events = [];
+    var events = [new calendarModule.CalendarEvent("poop", new Date(2017, 12, 19), new Date(2017,12,20))];
 
+	/*
     var j = 1;
     for (var i = 0; i < eventTitles.length; i++) {
         var now = new Date();
-        var startDate = new Date(now.getFullYear(), now.getMonth(), j * 2, 12);
-        var endDate = new Date(now.getFullYear(), now.getMonth(), (j * 2) + (j % 3), 13);
+        var startDate = new Date(now.getFullYear(), now.getMonth(), now.getDay());
+        var endDate = new Date(now.getFullYear(), now.getMonth(), now.getDay());
         var event = new calendarModule.CalendarEvent(eventTitles[i], startDate, endDate);
         events.push(event);
         j++;
     }
-
-    pageData.set("events", events);
+*/
+    calendarViewModel.set("events", events);
 }
