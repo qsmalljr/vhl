@@ -62,8 +62,8 @@
               <ListView.itemTemplate>
                 
                 <FlexboxLayout flexDirection="row" class="list-group-item" textWrap ="true">
-                  <Label text="{{ name }}" class="list-group-item-heading" horizontalAlignment ="center" verticalAlignment="middle" style="width: 60%" />
-                  <Label text="{{ desc }}" fontWeight ="bold"/>
+                  <Label text="{{ name }}"  fontWeight ="bold" class="list-group-item-heading" horizontalAlignment ="center" verticalAlignment="middle" style="width: 60%" textWrap ="true"/>
+                  <Label text="{{ desc }}" textWrap ="true"/>
                 </FlexboxLayout>
                 
               </ListView.itemTemplate>
