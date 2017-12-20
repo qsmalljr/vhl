@@ -1,8 +1,10 @@
 <Page
     class="page"
-    navigatingTo="onNavigatingTo"  
+    navigatingTo="onNavigatingTo"
     xmlns:nsDrawer="nativescript-pro-ui/sidedrawer"
+    xmlns:calendar="nativescript-pro-ui/calendar"
     xmlns:myDrawer="shared/my-drawer"
+    loaded="pageLoaded"
     xmlns="http://www.nativescript.org/tns.xsd"
 	>
 
@@ -64,10 +66,12 @@
         -->
         <nsDrawer:RadSideDrawer.mainContent>
 			<GridLayout>
-				<StackLayout height="100%" xmlns:calendar="nativescript-pro-ui/calendar">
-					
+				
+        <StackLayout height="100%" xmlns:calendar="nativescript-pro-ui/calendar">
+          
 					<calendar:RadCalendar id="calendar" eventSource="{{ events }}" eventsViewMode="Inline|Popover"/>
-				</StackLayout>
+				
+        </StackLayout>
 				
 				<AbsoluteLayout horizontalAlignment="right">
 					<StackLayout top="0" height="30%" width="40%" style="background-color:#fff;" orientation="vertical">
@@ -78,6 +82,7 @@
 					</StackLayout>
 				</AbsoluteLayout>
 			</GridLayout>
+        
         </nsDrawer:RadSideDrawer.mainContent>
     </nsDrawer:RadSideDrawer>
 </Page>
