@@ -1,7 +1,7 @@
 const frameModule = require("ui/frame");
 
 var CalendarViewModel = require("./calendar-view-model");
-var calendarModule = require("nativescript-telerik-ui-pro/calendar");
+var calendarModule = require("nativescript-pro-ui/calendar");
 
 
 
