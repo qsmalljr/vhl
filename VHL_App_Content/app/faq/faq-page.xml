@@ -61,7 +61,7 @@
             <ListView class="list-group" items="{{ questions }}" style="height:10000px">
               <ListView.itemTemplate>
                 
-                <FlexboxLayout flexDirection="row" class="list-group-item">
+                <FlexboxLayout flexDirection="row" class="list-group-item" textWrap ="true">
                   <Label text="{{ name }}" class="list-group-item-heading" horizontalAlignment ="center" verticalAlignment="middle" style="width: 60%" />
                   <Label text="{{ desc }}" fontWeight ="bold"/>
                 </FlexboxLayout>

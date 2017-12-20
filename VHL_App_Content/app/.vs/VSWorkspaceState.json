@@ -1,11 +1,11 @@
 {
   "ExpandedNodes": [
     "",
+    "\\clinicalcare",
+    "\\faq",
     "\\handbook",
-    "\\handbook\\pdfs",
-    "\\shared",
     "\\shared\\my-drawer"
   ],
-  "SelectedNode": "\\handbook\\pdfs\\CompleteHandbook.pdf",
+  "SelectedNode": "\\clinicalcare\\clinicalcare-page.xml",
   "PreviewInSolutionExplorer": false
 }
