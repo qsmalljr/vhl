@@ -9,8 +9,7 @@ function FAQModel() {
             { name: "What is the active surveillance protocol for VHL patients?", desc: "Even young children with VHL need to be monitored for lesions. Most VHL tumors in the eye or ear are best treated as soon as they are found. Other tumors, such as on the kidney or CNS, should be monitored regularly; researchers have defined specific criteria for removal." },
             { name: "What is the VHL Alliance?", desc: "The VHL Alliance (VHLA) is a 501c3 non-profit organization founded in 1993. Today, VHLA is the world’s leading organization supporting von Hippel- Landau Syndrome. VHLA funds research, increases awareness, and provides education and support to improve the lives of thousands of people living with VHL." },
             { name: "How can I find the leading VHL specialists?", desc: "The VHLA established the Clinical Care Center (CCC) program to enable people living with VHL to obtain the best possible care from a medical team knowledgeable about this rare disease. VHLA - endorsed CCCs provide effective coordination of care, promote timely surveillance and serve as a source of information and support.Note: an endorsement of a VHL team at a particular hospital does NOT endorse every provider at the hospital. " },
-            { name: "Glossary of Medical Terms", desc: "6" },
-            { name: "VHL Support Resources", desc: "7" },
+
         ],
 
     });
