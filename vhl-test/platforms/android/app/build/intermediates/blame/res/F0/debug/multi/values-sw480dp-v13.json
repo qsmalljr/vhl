@@ -1,0 +1,26 @@
+[
+    {
+        "outputFile": "C:\\Users\\Q\\Desktop\\vhl\\vhl-test\\platforms\\android\\app\\build\\intermediates\\incremental\\mergeF0DebugResources\\merged.dir\\values-sw480dp-v13\\values-sw480dp-v13.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 55,
+                    "endOffset": 106
+                },
+                "from": {
+                    "file": "C:\\Users\\Q\\.android\\build-cache\\8067c3222abc7ea3bc1923b8cf41f0b8fa80a7ec\\output\\res\\values-sw480dp-v13\\values-sw480dp-v13.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 55,
+                        "endOffset": 106
+                    }
+                }
+            }
+        ]
+    }
+]

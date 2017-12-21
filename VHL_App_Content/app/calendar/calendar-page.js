@@ -48,8 +48,10 @@ exports.pageLoaded = function(args) {
     page.bindingContext = calendarViewModel;
 
     var eventTitles = ["Lunch with Steve", "Meeting with Jane", "Q1 Recap Meeting"];
-    var events = [new calendarModule.CalendarEvent("poop", new Date(2017, 12, 19), new Date(2017,12,20))];
-
+    
+	var events = [];
+	
+	events.push(calendarModule.CalendarEvent("poop", new Date(2017, 12, 19), new Date(2017,12,20)));
 	/*
     var j = 1;
     for (var i = 0; i < eventTitles.length; i++) {
@@ -61,5 +63,6 @@ exports.pageLoaded = function(args) {
         j++;
     }
 */
-    calendarViewModel.set("events", events);
+    
 }
+

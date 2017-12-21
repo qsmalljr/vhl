@@ -1,0 +1,50 @@
+[
+    {
+        "merged": "C:\\Users\\Q\\Desktop\\vhl\\vhl-test\\platforms\\android\\app\\build\\intermediates\\res\\merged\\F0\\debug\\drawable-v21\\design_bottom_navigation_item_background.xml",
+        "source": "C:\\Users\\Q\\.android\\build-cache\\4a147e7b4793593decc5a90dcdd3a455f840a9b3\\output\\res\\drawable-v21\\design_bottom_navigation_item_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\Q\\Desktop\\vhl\\vhl-test\\platforms\\android\\app\\build\\intermediates\\res\\merged\\F0\\debug\\drawable-v21\\pressable_item_background.xml",
+        "source": "C:\\Users\\Q\\.android\\build-cache\\e1bcc0a0df003c5333ea6d4aa9e221c09a6a6065\\output\\res\\drawable-v21\\pressable_item_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\Q\\Desktop\\vhl\\vhl-test\\platforms\\android\\app\\build\\intermediates\\res\\merged\\F0\\debug\\drawable-v21\\autocomplete_focusable_bg.xml",
+        "source": "C:\\Users\\Q\\.android\\build-cache\\8067c3222abc7ea3bc1923b8cf41f0b8fa80a7ec\\output\\res\\drawable-v21\\autocomplete_focusable_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\Q\\Desktop\\vhl\\vhl-test\\platforms\\android\\app\\build\\intermediates\\res\\merged\\F0\\debug\\drawable-v21\\autocomplete_bg_normal.xml",
+        "source": "C:\\Users\\Q\\.android\\build-cache\\8067c3222abc7ea3bc1923b8cf41f0b8fa80a7ec\\output\\res\\drawable-v21\\autocomplete_bg_normal.xml"
+    },
+    {
+        "merged": "C:\\Users\\Q\\Desktop\\vhl\\vhl-test\\platforms\\android\\app\\build\\intermediates\\res\\merged\\F0\\debug\\drawable-v21\\abc_btn_colored_material.xml",
+        "source": "C:\\Users\\Q\\.android\\build-cache\\991c0082162092736bca9a032b1e330e5161b6b0\\output\\res\\drawable-v21\\abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Q\\Desktop\\vhl\\vhl-test\\platforms\\android\\app\\build\\intermediates\\res\\merged\\F0\\debug\\drawable-v21\\avd_show_password.xml",
+        "source": "C:\\Users\\Q\\.android\\build-cache\\4a147e7b4793593decc5a90dcdd3a455f840a9b3\\output\\res\\drawable-v21\\avd_show_password.xml"
+    },
+    {
+        "merged": "C:\\Users\\Q\\Desktop\\vhl\\vhl-test\\platforms\\android\\app\\build\\intermediates\\res\\merged\\F0\\debug\\drawable-v21\\abc_edit_text_material.xml",
+        "source": "C:\\Users\\Q\\.android\\build-cache\\991c0082162092736bca9a032b1e330e5161b6b0\\output\\res\\drawable-v21\\abc_edit_text_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Q\\Desktop\\vhl\\vhl-test\\platforms\\android\\app\\build\\intermediates\\res\\merged\\F0\\debug\\drawable-v21\\autocomplete_bg_active.xml",
+        "source": "C:\\Users\\Q\\.android\\build-cache\\8067c3222abc7ea3bc1923b8cf41f0b8fa80a7ec\\output\\res\\drawable-v21\\autocomplete_bg_active.xml"
+    },
+    {
+        "merged": "C:\\Users\\Q\\Desktop\\vhl\\vhl-test\\platforms\\android\\app\\build\\intermediates\\res\\merged\\F0\\debug\\drawable-v21\\notification_action_background.xml",
+        "source": "C:\\Users\\Q\\.android\\build-cache\\991c0082162092736bca9a032b1e330e5161b6b0\\output\\res\\drawable-v21\\notification_action_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\Q\\Desktop\\vhl\\vhl-test\\platforms\\android\\app\\build\\intermediates\\res\\merged\\F0\\debug\\drawable-v21\\avd_hide_password.xml",
+        "source": "C:\\Users\\Q\\.android\\build-cache\\4a147e7b4793593decc5a90dcdd3a455f840a9b3\\output\\res\\drawable-v21\\avd_hide_password.xml"
+    },
+    {
+        "merged": "C:\\Users\\Q\\Desktop\\vhl\\vhl-test\\platforms\\android\\app\\build\\intermediates\\res\\merged\\F0\\debug\\drawable-v21\\abc_action_bar_item_background_material.xml",
+        "source": "C:\\Users\\Q\\.android\\build-cache\\991c0082162092736bca9a032b1e330e5161b6b0\\output\\res\\drawable-v21\\abc_action_bar_item_background_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Q\\Desktop\\vhl\\vhl-test\\platforms\\android\\app\\build\\intermediates\\res\\merged\\F0\\debug\\drawable-v21\\design_password_eye.xml",
+        "source": "C:\\Users\\Q\\.android\\build-cache\\4a147e7b4793593decc5a90dcdd3a455f840a9b3\\output\\res\\drawable-v21\\design_password_eye.xml"
+    }
+]

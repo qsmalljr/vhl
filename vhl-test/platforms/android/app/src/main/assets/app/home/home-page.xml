@@ -1,0 +1,101 @@
+<Page
+    class="page"
+    navigatingTo="onNavigatingTo"  
+    xmlns:nsDrawer="nativescript-pro-ui/sidedrawer"
+    xmlns:myDrawer="shared/my-drawer"
+    xmlns="http://schemas.nativescript.org/tns.xsd">
+    
+    <ActionBar class="action-bar">
+        <!-- 
+        Use the NavigationButton as a side-drawer button in Android because ActionItems are shown on the right side of the ActionBar
+        -->
+        <NavigationButton ios:visibility="collapsed" icon="res://menu" tap="onDrawerButtonTap"></NavigationButton>
+        <!-- 
+        Use the ActionItem for IOS with position set to left. Using the NavigationButton as a side-drawer button in iOS is not possible, because its function is to always navigate back in the application.
+        -->
+        <ActionItem icon="res://navigation/menu" 
+            android:visibility="collapsed" 
+            tap="onDrawerButtonTap"
+            ios.position="left">
+        </ActionItem>
+		
+        <StackLayout orientation="horizontal" horizontalAlignment="right" style="margin-right:10;">
+			<Button width="135" class="donate-button" text="Donate" style="margin-right:20;"/>
+			<Image src="~/images/logo-header.png" style="width:auto; height:50;"/>
+		</StackLayout>
+    </ActionBar>
+
+    <!--
+    RadSideDrawer is a UI component part of the Progress NativeScript UI set of components.
+    Learn more about the RadSideDrawer UI component and how it can be customized in this documentation article:
+    http://docs.telerik.com/devtools/nativescript-ui/Controls/NativeScript/SideDrawer/getting-started
+    The RadSideDrawer component is designed to be used as a root element to the <Page> and
+    it shouldn't have any other siblings other than the <ActionBar> component.
+    -->
+    <nsDrawer:RadSideDrawer id="sideDrawer" showOverNavigation="true">
+        <!--
+        Use the RadSideDrawer.drawerTransition component to change the open/close animation of the drawer.
+        -->
+        <nsDrawer:RadSideDrawer.drawerTransition>
+            <nsDrawer:SlideInOnTopTransition/>
+        </nsDrawer:RadSideDrawer.drawerTransition>
+
+        <!--
+        Use the RadSideDrawer.drawerContent component to display the content of the app drawer on this page.
+        Always wrap content in a layout component.
+        -->
+        <nsDrawer:RadSideDrawer.drawerContent>
+            <StackLayout>
+                <!--
+                Use {N} custom components to reuse UI across your mobile app.
+                The MyDrawer custom component defined in "/shared/my-drawer" holds the contents of the app drawer.
+                Learn more about custom components and how they can be used in this documentation article:
+                http://docs.nativescript.org/ui/basics#custom-components
+                -->
+                <myDrawer:MyDrawer selectedPage="Home"/>
+            </StackLayout>
+        </nsDrawer:RadSideDrawer.drawerContent>
+
+        <!--
+        Use the RadSideDrawer.mainContent component to display the content of the page when you have an app drawer.
+        Always wrap content in a layout component.
+        -->
+        <nsDrawer:RadSideDrawer.mainContent>
+		<ScrollView>
+            <StackLayout orientation="vertical">
+			
+				<StackLayout class="home-block" orientation="vertical">
+					<Label class="home-block-title" text="What is VHL?"/>
+					<Label class="home-block-content" textWrap="true" text="Von Hippel-Lindau (VHL) is a genetic condition involving the abnormal growth of blood vessels in up to 10 parts of the body. It is caused by a flaw in one gene, the VHL gene, which regulates cell growth causing patients to battle a series of tumors throughout their life." />
+					<Button borderWidth="1" borderColor="white" class="home-block-button" border="" text="LEARN MORE »"/>
+
+				</StackLayout>
+			
+				<StackLayout class="home-block" orientation="vertical" style="background-color:#46BBE7;">
+					<Label class="home-block-title" textWrap="true" text="I have VHL. What can I do?"/>
+					<Label class="home-block-content" textWrap="true" text="See the many activities and opportunities for learning and connecting with others dealing with VHL, whether they be patients, family members, caregivers, or friends." />
+					<Button borderWidth="1" borderColor="white" style="background-color:#46BBE7;" class="home-block-button" border="" text="LEARN MORE »"/>
+				</StackLayout>
+			
+				<StackLayout class="home-block" orientation="vertical" style="background-color:#00BCB4;">
+					<Label class="home-block-title" textWrap="true" text="Resources for Professionals"/>
+					<Label class="home-block-content" textWrap="true" text="The VHL Alliance is a major resource for VHL diagnosis, screening and treatment. The “Professionals” section contains a wealth of information for health professionals seeking to know more about von Hippel-Lindau disease." />
+					<Button borderWidth="1" borderColor="white" style="background-color:#00BCB4;" class="home-block-button" border="" text="LEARN MORE »"/>
+				</StackLayout>
+			
+				<StackLayout class="home-block" orientation="vertical" style="background-color:#FFA13B;">
+					<Label class="home-block-title" textWrap="true" text="Research"/>
+					<Label class="home-block-content" textWrap="true" text="The VHL Alliance is a leading funder of VHL research with over $1.7 million granted to support studies designed to find a cure. While these funds have not yet uncovered an effective pharmacological treatment for VHL, the supported research has resulted in approval of multiple cancer drugs for other cancers including kidney and breast cancers." />
+					<Button borderWidth="1" borderColor="white" style="background-color:#FFA13B;" class="home-block-button" border="" text="LEARN MORE »"/>
+				</StackLayout>
+				
+				<StackLayout class="home-block" orientation="vertical" style="background-color:#F66C54;">
+					<Label class="home-block-title" textWrap="true" text="I want to help."/>
+					<Label class="home-block-content" textWrap="true" text="It is only though the generosity of our supporters and our volunteers that we can offer so many different programs. We are asking you to join us and continue your support." />
+					<Button borderWidth="1" borderColor="white" style="background-color:#F66C54;" class="home-block-button" border="" text="LEARN MORE »"/>
+				</StackLayout>
+			</StackLayout>
+		</ScrollView>
+        </nsDrawer:RadSideDrawer.mainContent>
+    </nsDrawer:RadSideDrawer>
+</Page>
