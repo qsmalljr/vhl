@@ -57,9 +57,26 @@
         Always wrap content in a layout component.
         -->
         <nsDrawer:RadSideDrawer.mainContent>
-            <GridLayout class="page-content">
-                <Label class="page-icon fa" text="&#xf1ea;"></Label>
-                <Label class="page-placeholder" text="<!-- Page content goes here -->"></Label>
+            <GridLayout class="page-content" xmlns:lv="nativescript-pro-ui/listview">
+				<StackLayout height="100%" xmlns:rc="nativescript-pro-ui/calendar">
+					
+					<rc:RadCalendar id="calendar" 
+						eventSource="{{ eventSource }}"
+						dateSelected="onDateSelected"
+						row="0"/>
+					<lv:RadListView items="{{ myItems }}" rowHeight="44" row="1">
+						<lv:RadListView.itemTemplate>
+							<Label text="{{title}}" marginLeft="10" />
+						</lv:RadListView.itemTemplate>
+					</lv:RadListView>				</StackLayout>
+				<AbsoluteLayout horizontalAlignment="right" visibility="collapsed">
+					<StackLayout top="0" height="30%" width="40%" style="background-color:#fff;" orientation="vertical">
+						<!-- Popup content ...--> 
+						<Button text="Add new event" width="100%" height="25%" class="btn-no-shadow"/>
+						<Button text="Edit event" width="100%" height="25%" class="btn-no-shadow"/>
+						<Button text="Add new event" width="100%" height="25%" class="btn-no-shadow"/>
+					</StackLayout>
+				</AbsoluteLayout>
             </GridLayout>
         </nsDrawer:RadSideDrawer.mainContent>
     </nsDrawer:RadSideDrawer>

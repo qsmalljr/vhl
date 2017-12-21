@@ -2,12 +2,12 @@ import { EventData } from "data/observable";
 import { RadSideDrawer } from "nativescript-pro-ui/sidedrawer";
 import { topmost } from "ui/frame";
 import { NavigatedData, Page } from "ui/page";
-
 import { BrowseViewModel } from "./browse-view-model";
 
 /* ***********************************************************
 * Use the "onNavigatingTo" handler to initialize the page binding context.
 *************************************************************/
+
 export function onNavigatingTo(args: NavigatedData) {
     /* ***********************************************************
     * The "onNavigatingTo" event handler lets you detect if the user navigated with a back button.
@@ -17,9 +17,10 @@ export function onNavigatingTo(args: NavigatedData) {
     if (args.isBackNavigation) {
         return;
     }
-
+	
     const page = <Page>args.object;
     page.bindingContext = new BrowseViewModel();
+
 }
 
 /* ***********************************************************
