@@ -3,6 +3,8 @@
     navigatingTo="onNavigatingTo"  
     xmlns:nsDrawer="nativescript-pro-ui/sidedrawer"
     xmlns:myDrawer="shared/my-drawer"
+    xmlns:pdf="nativescript-pdf-view"
+    loaded="pageLoaded"
     xmlns="http://schemas.nativescript.org/tns.xsd">
 
     <ActionBar class="action-bar">
@@ -18,7 +20,7 @@
             tap="onDrawerButtonTap"
             ios.position="left">
         </ActionItem>
-        <Label class="action-bar-title" text="Calendar Manager"></Label>
+        <Label class="action-bar-title" text="Section 7"></Label>
     </ActionBar>
 
     <!--
@@ -48,7 +50,7 @@
                 Learn more about custom components and how they can be used in this documentation article:
                 http://docs.nativescript.org/ui/basics#custom-components
                 -->
-                <myDrawer:MyDrawer selectedPage="CalendarManager"/>
+                <myDrawer:MyDrawer selectedPage="hbsection7"/>
             </StackLayout>
         </nsDrawer:RadSideDrawer.drawerContent>
 
@@ -57,14 +59,9 @@
         Always wrap content in a layout component.
         -->
         <nsDrawer:RadSideDrawer.mainContent>
-            <StackLayout class="page-content">
-			
-				<TextField text="{{ textFieldValue }}" hint="Enter a title for your event" />
-				<DatePicker loaded="{{ onPickerLoaded }}" year="{{ currentYear }}" month="{{ currentMonth }}" day="{{ currentDay}}" minDate="1970-01-01" maxDate="2100-12-31"/>
-				<TimePicker hour="{{ currentHour }}" minute="{{ currentMinute }}" verticalAlignment="center" />
-				<Button text="Add Event" tap="{{ navBack }}"/>
-              
-            </StackLayout>
+            <GridLayout class="page-content">
+              <pdf:PDFView src="http://www.qandadevelopment.com/img/section7.pdf" load="{{ onLoad }}" />
+            </GridLayout>
         </nsDrawer:RadSideDrawer.mainContent>
     </nsDrawer:RadSideDrawer>
 </Page>

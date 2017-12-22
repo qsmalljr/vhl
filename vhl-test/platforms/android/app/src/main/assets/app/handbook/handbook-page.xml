@@ -57,10 +57,16 @@
         Always wrap content in a layout component.
         -->
         <nsDrawer:RadSideDrawer.mainContent>
-            <GridLayout class="page-content">
-                <Label class="page-icon fa" text="&#xf005;"></Label>
-                <Label class="page-placeholder" text="<!-- Page content goes here -->"></Label>
-            </GridLayout>
+          <StackLayout>
+            <ListView class="list-group" items="{{ sections }}" itemTap="tapAction" style="height:10000px">
+              <ListView.itemTemplate>
+                <FlexboxLayout flexDirection="row" class="list-group-item">
+                  <Label text="{{ imageSrc }}" class="thumb img-circle" fontWeight ="bold"/>
+                  <Label text="{{ name }}" class="list-group-item-heading" horizontalAlignment ="center" verticalAlignment="middle" style="width: 60%" />
+                </FlexboxLayout>
+              </ListView.itemTemplate>
+            </ListView>
+          </StackLayout>
         </nsDrawer:RadSideDrawer.mainContent>
     </nsDrawer:RadSideDrawer>
 </Page>
