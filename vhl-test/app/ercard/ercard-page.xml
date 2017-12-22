@@ -61,7 +61,7 @@
         <nsDrawer:RadSideDrawer.mainContent>
             <GridLayout class="page-content">
 
-              <pdf:PDFView src="https://www2.ed.gov/parents/academic/help/homework/homework.pdf" load="{{ onLoad }}" />
+              <pdf:PDFView src="https://www2.ed.gov/parents/academic/help/homework/homework.pdf" />
               
             </GridLayout>
         </nsDrawer:RadSideDrawer.mainContent>
