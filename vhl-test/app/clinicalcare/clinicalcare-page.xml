@@ -57,10 +57,215 @@
         Always wrap content in a layout component.
         -->
         <nsDrawer:RadSideDrawer.mainContent>
-            <GridLayout class="page-content">
-                <Label class="page-icon fa" text="&#xf005;"></Label>
-                <Label class="page-placeholder" text="<!-- Page content goes here -->"></Label>
-            </GridLayout>
+			<StackLayout>
+			
+				<Button style="background-color:#46BBE7;" text="CCC Feedback Form" tap="{{ onOpenSurvey }}"/>
+				
+				<TabView>
+					<TabView.items>
+					
+						<TabViewItem title="US Comprehensive">
+							<TabViewItem.view textWrap="true" style="float:left;">
+									
+										<StackLayout >
+										  <ListView class="list-group" items="{{ sections }}" itemTap="{{ onButtonTap }}" rowHeight="150">
+											<ListView.itemTemplate>
+											  <StackLayout class="list-group-item" textWrap="true">
+												<Label text="{{ name }}" fontWeight ="bold" style="margin-bottom:20;" textWrap="true"/>
+												<Label text="{{ desc }}" textWrap="true"/>
+												<Label text="{{ contact }}" textWrap="true"/>
+												<Label text="{{ tel }}" textWrap="true"/>
+												<Label text="{{ email }}" textWrap="true"/>
+												<Label text="{{ web }}" textWrap="true" style="text-decoration:underline;"/>
+												<Label text="{{ adult }}" textWrap="true" style="font-style:italic;"/>
+											  </StackLayout>
+											</ListView.itemTemplate>
+										  </ListView>
+										</StackLayout>
+									
+
+							</TabViewItem.view>
+						</TabViewItem>
+						
+						<TabViewItem title="US Care Centers">
+							<TabViewItem.view>
+								
+									<StackLayout>
+									
+										  <ListView class="list-group" items="{{ sections1 }}" itemTap="{{ onButtonTap1 }}" itemTemplateSelector="{{ selectItemTemplate }}">
+											<ListView.itemTemplates>
+												<template key="one">
+													<StackLayout textWrap="true" class="list-group-item">
+														<Label text="{{ name }}" fontWeight ="bold" style="margin-bottom:20;" textWrap="true"/>
+														<Label text="{{ desc }}" textWrap="true"/>
+														<Label text="{{ contact }}" textWrap="true"/>
+														<Label text="{{ tel }}" textWrap="true"/>
+														<Label text="{{ email }}" textWrap="true"/>
+														<Label text="{{ web }}" textWrap="true" style="text-decoration:underline;"/>
+														<Label text="{{ adult }}" textWrap="true" style="font-style:italic;"/>
+													</StackLayout>
+												</template>
+											  
+												<template key="two">
+													<StackLayout class="list-group-item" textWrap="true">
+														<Label text="{{ name }}" fontWeight ="bold" style="margin-bottom:20;" textWrap="true"/>
+														<Label text="{{ desc }}" textWrap="true"/>
+														<Label text="{{ contact }}" textWrap="true"/>
+														<Label text="{{ tel }}" textWrap="true"/>
+														<Label text="{{ email }}" textWrap="true"/>
+														<Label text="{{ web }}" textWrap="true" style="text-decoration:underline;"/>
+														<Label text="{{adult}}" textWrap="true"/>
+														
+														<Label text="{{ desc2 }}" textWrap="true"/>
+														<Label text="{{ contact2 }}" textWrap="true"/>
+														<Label text="{{ tel2 }}" textWrap="true"/>
+														<Label text="{{ email2 }}" textWrap="true"/>
+														<Label text="{{ web2 }}" textWrap="true" style="text-decoration:underline;"/>
+														<Label text="{{ adult2 }}" textWrap="true" style="font-style:italic;"/>
+													</StackLayout>
+												</template>
+												
+												<template key="three">
+													<StackLayout class="list-group-item" textWrap="true">
+														<Label text="{{ name }}" fontWeight ="bold" style="margin-bottom:20;" textWrap="true"/>
+														<Label text="{{ desc }}" textWrap="true"/>
+														<Label text="{{ contact }}" textWrap="true"/>
+														<Label text="{{ tel }}" textWrap="true"/>
+														<Label text="{{ email }}" textWrap="true"/>
+														<Label text="{{ web }}" textWrap="true" style="text-decoration:underline;"/>
+														<Label text="{{adult}}" textWrap="true"/>
+														
+														<Label text="{{ desc2 }}" textWrap="true"/>
+														<Label text="{{ contact2 }}" textWrap="true"/>
+														<Label text="{{ tel2 }}" textWrap="true"/>
+														<Label text="{{ email2 }}" textWrap="true"/>
+														<Label text="{{ web2 }}" textWrap="true" style="text-decoration:underline;"/>
+														<Label text="{{ adult2 }}" textWrap="true" style="font-style:italic;"/>
+														
+														<Label text="{{ desc3 }}" textWrap="true"/>
+														<Label text="{{ contact3 }}" textWrap="true"/>
+														<Label text="{{ tel3 }}" textWrap="true"/>
+														<Label text="{{ email3 }}" textWrap="true"/>
+														<Label text="{{ web3 }}" textWrap="true" style="text-decoration:underline;"/>
+														<Label text="{{ adult3 }}" textWrap="true" style="font-style:italic;"/>
+													</StackLayout>
+												</template>
+											</ListView.itemTemplates>
+											
+										  </ListView>
+										  
+									</StackLayout>
+								
+							</TabViewItem.view>
+						</TabViewItem>
+						
+						<TabViewItem title="International Centers">
+							<TabViewItem.view>
+								<ListView class="list-group" items="{{ sections2 }}" itemTap="{{ onButtonTap2 }}" itemTemplateSelector="{{ selectItemTemplate1 }}">
+											<ListView.itemTemplates>
+												<template key="normal">
+													<StackLayout textWrap="true" class="list-group-item">
+														<Label text="{{ name }}" fontWeight ="bold" style="margin-bottom:20;" textWrap="true"/>
+														<Label text="{{ desc }}" textWrap="true"/>
+														<Label text="{{ contact }}" textWrap="true"/>
+														<Label text="{{ tel }}" textWrap="true"/>
+														<Label text="{{ email }}" textWrap="true"/>
+														<Label text="{{ web }}" textWrap="true" style="text-decoration:underline;"/>
+														<Label text="{{ adult }}" textWrap="true" style="font-style:italic;"/>
+													</StackLayout>
+												</template>
+											  
+												<template key="argentina">
+													<StackLayout class="list-group-item" textWrap="true">
+														<Label text="{{ name }}" fontWeight ="bold" style="margin-bottom:20;" textWrap="true"/>
+														<Label text="{{ desc }}" textWrap="true"/>
+														<Label text="{{ contact }}" textWrap="true"/>
+														<Label text="{{ tel }}" textWrap="true"/>
+														<Label text="{{ email }}" textWrap="true"/>
+														<Label text="{{ contact2 }}" textWrap="true"/>
+														<Label text="{{ tel2 }}" textWrap ="true"/>
+														<Label text="{{ email2 }}" textWrap="true" style="margin-bottom:20;"/>
+														
+														<Label text="{{ desc2 }}" textWrap="true"/>
+														<Label text="{{ email3 }}" textWrap="true"/>
+
+													</StackLayout>
+												</template>
+												
+												<template key="belgium">
+													<StackLayout class="list-group-item" textWrap="true">
+														<Label text="{{ name }}" fontWeight ="bold" style="margin-bottom:20;" textWrap="true"/>
+														<Label text="{{ desc }}" textWrap="true"/>
+														<Label text="{{ contact }}" textWrap="true"/>
+														<Label text="{{ tel }}" textWrap="true"/>
+														<Label text="{{ email }}" textWrap="true"/>
+														<Label text="{{ desc2 }}" textWrap="true"/>
+														<Label text="{{ contact2 }}" textWrap ="true"/>
+														<Label text="{{ tel2 }}" textWrap="true"/>
+														<Label text="{{ email2 }}" textWrap="true"/>
+
+													</StackLayout>
+												</template>
+												
+												<template key="canada">
+													<StackLayout class="list-group-item" textWrap="true">
+														<Label text="{{ name }}" fontWeight ="bold" style="margin-bottom:20;" textWrap="true"/>
+														<Label text="{{ desc }}" textWrap="true"/>
+														<Label text="{{ contact }}" textWrap="true"/>
+														<Label text="{{ tel }}" textWrap="true"/>
+														<Label text="{{ email }}" textWrap="true" style="margin-bottom:20"/>
+														
+														<Label text="{{ desc2 }}" textWrap="true"/>
+														<Label text="{{ contact2 }}" textWrap="true"/>
+														<Label text="{{ tel2 }}" textWrap ="true"/>
+														<Label text="{{ email2 }}" textWrap="true" style="margin-bottom:20;"/>
+														
+														<Label text="{{ desc3 }}" textWrap="true"/>
+														<Label text="{{ contact3 }}" textWrap="true"/>
+														<Label text="{{ tel3 }}" textWrap ="true"/>
+														<Label text="{{ email3 }}" textWrap="true"/>
+
+													</StackLayout>
+												</template>
+												
+												<template key="uk">
+													<StackLayout class="list-group-item" textWrap="true">
+														<Label text="{{ name }}" fontWeight ="bold" style="margin-bottom:20;" textWrap="true"/>
+														
+														<Label text="{{ overview }}" textWrap="true" style="margin-bottom:10"/>
+														
+														<Label text="{{ desc }}" textWrap="true"/>
+														<Label text="{{ contact }}" textWrap="true"/>
+														<Label text="{{ tel }}" textWrap="true"/>
+														<Label text="{{ email }}" textWrap="true" style="margin-bottom:20"/>
+														
+														<Label text="{{ desc2 }}" textWrap="true"/>
+														<Label text="{{ contact2 }}" textWrap="true"/>
+														<Label text="{{ tel2 }}" textWrap ="true"/>
+														<Label text="{{ email2 }}" textWrap="true" style="margin-bottom:20;"/>
+														
+														<Label text="{{ desc3 }}" textWrap="true"/>
+														<Label text="{{ contact3 }}" textWrap="true"/>
+														<Label text="{{ tel3 }}" textWrap ="true"/>
+														<Label text="{{ email3 }}" textWrap="true"/>
+														
+														<Label text="{{ desc4 }}" textWrap="true"/>
+														<Label text="{{ contact4 }}" textWrap="true"/>
+														<Label text="{{ tel4 }}" textWrap ="true"/>
+
+													</StackLayout>
+												</template>
+
+											</ListView.itemTemplates>
+											
+										  </ListView>
+							</TabViewItem.view>
+						</TabViewItem>
+					</TabView.items>
+				</TabView>
+				
+				
+            </StackLayout>
         </nsDrawer:RadSideDrawer.mainContent>
     </nsDrawer:RadSideDrawer>
 </Page>
