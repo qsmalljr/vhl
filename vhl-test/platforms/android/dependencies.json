@@ -1,5 +1,9 @@
 [
     {
+        "name": "nativescript-pdf-view",
+        "directory": "..\\..\\node_modules\\nativescript-pdf-view"
+    },
+    {
         "name": "nativescript-pro-ui",
         "directory": "..\\..\\node_modules\\nativescript-pro-ui"
     },

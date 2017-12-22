@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "C:\\Users\\Q\\Desktop\\vhl\\vhl-test\\platforms\\android\\app\\build\\intermediates\\res\\merged\\F0F1\\debug\\layout-v21\\notification_template_custom_big.xml",
+        "source": "C:\\Users\\Q\\.android\\build-cache\\991c0082162092736bca9a032b1e330e5161b6b0\\output\\res\\layout-v21\\notification_template_custom_big.xml"
+    },
+    {
+        "merged": "C:\\Users\\Q\\Desktop\\vhl\\vhl-test\\platforms\\android\\app\\build\\intermediates\\res\\merged\\F0F1\\debug\\layout-v21\\notification_action_tombstone.xml",
+        "source": "C:\\Users\\Q\\.android\\build-cache\\991c0082162092736bca9a032b1e330e5161b6b0\\output\\res\\layout-v21\\notification_action_tombstone.xml"
+    },
+    {
+        "merged": "C:\\Users\\Q\\Desktop\\vhl\\vhl-test\\platforms\\android\\app\\build\\intermediates\\res\\merged\\F0F1\\debug\\layout-v21\\notification_template_icon_group.xml",
+        "source": "C:\\Users\\Q\\.android\\build-cache\\991c0082162092736bca9a032b1e330e5161b6b0\\output\\res\\layout-v21\\notification_template_icon_group.xml"
+    },
+    {
+        "merged": "C:\\Users\\Q\\Desktop\\vhl\\vhl-test\\platforms\\android\\app\\build\\intermediates\\res\\merged\\F0F1\\debug\\layout-v21\\notification_action.xml",
+        "source": "C:\\Users\\Q\\.android\\build-cache\\991c0082162092736bca9a032b1e330e5161b6b0\\output\\res\\layout-v21\\notification_action.xml"
+    }
+]

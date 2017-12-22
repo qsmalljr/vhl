@@ -1,9 +1,9 @@
 {
-	"time": "Fri Dec 22 2017 15:45:08 GMT-0500 (Eastern Standard Time)",
+	"time": "Fri Dec 22 2017 16:28:58 GMT-0500 (Eastern Standard Time)",
 	"nativePlatformStatus": "3",
 	"bundle": false,
 	"release": false,
-	"changesRequireBuild": true,
+	"changesRequireBuild": false,
 	"projectFileHash": "e8f133a34990aa79c9240265d2c6611dece3e85aef54b5451fc6d330a9bd144b",
 	"changesRequireBuildTime": "Fri Dec 22 2017 15:45:08 GMT-0500 (Eastern Standard Time)"
 }

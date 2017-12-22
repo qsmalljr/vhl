@@ -3,12 +3,30 @@
 
     <item
         is-multidex="false"
+        jar="C:\Users\Q\.android\build-cache\87b0261c2f2c7af21486eb933ec583e2aaaf5bf9\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="97a90b867543905c0717d04f6a60532c9405aa33">
+        <dex dex="C:\Users\Q\Desktop\vhl\vhl-test\platforms\android\app\build\intermediates\pre-dexed\F0F1\debug\classes_6e6b1760ff41cb7f7f919912c92536b55248707c.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="C:\Users\Q\.android\build-cache\1a5321316e9dab503d519f4eeaca230050500193\output\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="26.0.2"
         sha1="746274223beb11b1cda7854d7eec3038695c2c93">
         <dex dex="C:\Users\Q\Desktop\vhl\vhl-test\platforms\android\app\build\intermediates\pre-dexed\F0\debug\classes_d2d5d0af95d37a850c3b0cf2b9847145ba3d32d1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Q\.android\build-cache\31127077077308c150880400037b18b5ea170dec\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="c161ac76cfb1553ae20be89601e6702caecbf2ef">
+        <dex dex="C:\Users\Q\Desktop\vhl\vhl-test\platforms\android\app\build\intermediates\pre-dexed\F0F1\debug\classes_ec0fc5d6cf6c6a35d11998d92dedff8fdcb6a4f8.jar" />
     </item>
 
 </items>

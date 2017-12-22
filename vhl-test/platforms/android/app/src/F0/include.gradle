@@ -1,12 +1,11 @@
 android {
-	productFlavors {
-		"nativescript-pro-ui" {
-			dimension "nativescript-pro-ui"
-		}
-	}
+  productFlavors {
+    "nativescript-pdf-view" {
+      dimension "nativescript-pdf-view"
+    }
+  }
 }
 
 dependencies {
-	compile "com.android.support:appcompat-v7:23.1.0"
-	compile "com.android.support:recyclerview-v7:23.1.0"
+    compile 'com.github.barteksc:android-pdf-viewer:2.5.1'
 }

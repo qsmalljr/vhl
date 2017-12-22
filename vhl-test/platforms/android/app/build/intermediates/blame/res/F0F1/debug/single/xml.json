@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "C:\\Users\\Q\\Desktop\\vhl\\vhl-test\\platforms\\android\\app\\build\\intermediates\\res\\merged\\F0F1\\debug\\xml\\chart_palettes_default_dark.xml",
+        "source": "C:\\Users\\Q\\.android\\build-cache\\bccfcf65034ccd16283f260734e5f51d998def74\\output\\res\\xml\\chart_palettes_default_dark.xml"
+    },
+    {
+        "merged": "C:\\Users\\Q\\Desktop\\vhl\\vhl-test\\platforms\\android\\app\\build\\intermediates\\res\\merged\\F0F1\\debug\\xml\\chart_palettes_default_light.xml",
+        "source": "C:\\Users\\Q\\.android\\build-cache\\bccfcf65034ccd16283f260734e5f51d998def74\\output\\res\\xml\\chart_palettes_default_light.xml"
+    },
+    {
+        "merged": "C:\\Users\\Q\\Desktop\\vhl\\vhl-test\\platforms\\android\\app\\build\\intermediates\\res\\merged\\F0F1\\debug\\xml\\chart_palettes_dark_selected.xml",
+        "source": "C:\\Users\\Q\\.android\\build-cache\\bccfcf65034ccd16283f260734e5f51d998def74\\output\\res\\xml\\chart_palettes_dark_selected.xml"
+    },
+    {
+        "merged": "C:\\Users\\Q\\Desktop\\vhl\\vhl-test\\platforms\\android\\app\\build\\intermediates\\res\\merged\\F0F1\\debug\\xml\\chart_palettes_light_selected.xml",
+        "source": "C:\\Users\\Q\\.android\\build-cache\\bccfcf65034ccd16283f260734e5f51d998def74\\output\\res\\xml\\chart_palettes_light_selected.xml"
+    }
+]
