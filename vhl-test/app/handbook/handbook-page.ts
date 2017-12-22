@@ -3,7 +3,7 @@ import { RadSideDrawer } from "nativescript-pro-ui/sidedrawer";
 import { topmost } from "ui/frame";
 import { NavigatedData, Page } from "ui/page";
 
-import { faqViewModel } from "./faq-view-model";
+import { handbookViewModel } from "./handbook-view-model";
 
 /* ***********************************************************
 * Use the "onNavigatingTo" handler to initialize the page binding context.
@@ -19,7 +19,7 @@ export function onNavigatingTo(args: NavigatedData) {
     }
 
     const page = <Page>args.object;
-    page.bindingContext = new faqViewModel();
+    page.bindingContext = new handbookViewModel();
 }
 
 /* ***********************************************************

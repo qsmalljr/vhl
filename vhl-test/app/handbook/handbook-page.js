@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var frame_1 = require("ui/frame");
-var faq_view_model_1 = require("./faq-view-model");
+var handbook_view_model_1 = require("./handbook-view-model");
 /* ***********************************************************
 * Use the "onNavigatingTo" handler to initialize the page binding context.
 *************************************************************/
@@ -15,7 +15,7 @@ function onNavigatingTo(args) {
         return;
     }
     var page = args.object;
-    page.bindingContext = new faq_view_model_1.faqViewModel();
+    page.bindingContext = new handbook_view_model_1.handbookViewModel();
 }
 exports.onNavigatingTo = onNavigatingTo;
 /* ***********************************************************
