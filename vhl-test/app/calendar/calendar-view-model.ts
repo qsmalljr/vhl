@@ -5,7 +5,7 @@ import frameModule = require("tns-core-modules/ui/frame");
 import { Color } from "tns-core-modules/color";
 import applicationSettingsModule = require("application-settings");
 
-export class BrowseViewModel extends Observable {
+export class CalendarViewModel extends Observable {
     constructor() {
         super();
 		

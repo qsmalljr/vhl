@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var frame_1 = require("ui/frame");
-var browse_view_model_1 = require("./browse-view-model");
+var calendar_view_model_1 = require("./calendar-view-model");
 /* ***********************************************************
 * Use the "onNavigatingTo" handler to initialize the page binding context.
 *************************************************************/
@@ -15,7 +15,7 @@ function onNavigatingTo(args) {
         return;
     }
     var page = args.object;
-    page.bindingContext = new browse_view_model_1.BrowseViewModel();
+    page.bindingContext = new calendar_view_model_1.CalendarViewModel();
 }
 exports.onNavigatingTo = onNavigatingTo;
 /* ***********************************************************
