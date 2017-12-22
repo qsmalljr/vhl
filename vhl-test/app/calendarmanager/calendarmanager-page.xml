@@ -18,7 +18,7 @@
             tap="onDrawerButtonTap"
             ios.position="left">
         </ActionItem>
-        <Label class="action-bar-title" text="FAQ"></Label>
+        <Label class="action-bar-title" text="Calendar Manager"></Label>
     </ActionBar>
 
     <!--
@@ -48,7 +48,7 @@
                 Learn more about custom components and how they can be used in this documentation article:
                 http://docs.nativescript.org/ui/basics#custom-components
                 -->
-                <myDrawer:MyDrawer selectedPage="FAQ"/>
+                <myDrawer:MyDrawer selectedPage="CalendarManager"/>
             </StackLayout>
         </nsDrawer:RadSideDrawer.drawerContent>
 
