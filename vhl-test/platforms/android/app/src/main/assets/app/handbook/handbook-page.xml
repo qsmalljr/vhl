@@ -58,7 +58,7 @@
         -->
         <nsDrawer:RadSideDrawer.mainContent>
           <StackLayout>
-            <ListView class="list-group" items="{{ sections }}" itemTap="tapAction" style="height:10000px">
+            <ListView class="list-group" items="{{ sections }}" itemTap="{{tapAction}}" style="height:10000px">
               <ListView.itemTemplate>
                 <FlexboxLayout flexDirection="row" class="list-group-item">
                   <Label text="{{ imageSrc }}" class="thumb img-circle" fontWeight ="bold"/>
