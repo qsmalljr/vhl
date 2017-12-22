@@ -27,7 +27,7 @@ ADDED from C:\Users\Q\Desktop\vhl\vhl-test\platforms\android\app\src\main\Androi
 		ADDED from C:\Users\Q\Desktop\vhl\vhl-test\platforms\android\app\src\main\AndroidManifest.xml:11:3-31
 uses-sdk
 ADDED from C:\Users\Q\Desktop\vhl\vhl-test\platforms\android\app\src\main\AndroidManifest.xml:13:2-15:34
-MERGED from [:nativescript-optimized:] C:\Users\Q\.android\build-cache\c1eb78279157a2461a6533ec8d462812be1a3f13\output\AndroidManifest.xml:7:5-9:41
+MERGED from [:nativescript-optimized:] C:\Users\Q\.android\build-cache\1a5321316e9dab503d519f4eeaca230050500193\output\AndroidManifest.xml:7:5-9:41
 MERGED from [:Chart-2017.1.1030-dev-release:] C:\Users\Q\.android\build-cache\bccfcf65034ccd16283f260734e5f51d998def74\output\AndroidManifest.xml:7:5-9:41
 MERGED from [:Common-2017.1.1030-dev-release:] C:\Users\Q\.android\build-cache\7173bed77498bfcd9c471a6675f112f19540345e\output\AndroidManifest.xml:7:5-9:41
 MERGED from [:Data-2017.1.1030-dev-release:] C:\Users\Q\.android\build-cache\28cdf32e75750b0a856ec591a59881c22dee6764\output\AndroidManifest.xml:7:5-9:41
