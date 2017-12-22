@@ -3,7 +3,7 @@ import { RadSideDrawer } from "nativescript-pro-ui/sidedrawer";
 import { topmost } from "ui/frame";
 import { NavigatedData, Page } from "ui/page";
 
-import { FeaturedViewModel } from "./featured-view-model";
+import { DatabankViewModel } from "./databank-view-model";
 
 /* ***********************************************************
 * Use the "onNavigatingTo" handler to initialize the page binding context.
@@ -19,7 +19,7 @@ export function onNavigatingTo(args: NavigatedData) {
     }
 
     const page = <Page>args.object;
-    page.bindingContext = new FeaturedViewModel();
+    page.bindingContext = new DatabankViewModel();
 }
 
 /* ***********************************************************
