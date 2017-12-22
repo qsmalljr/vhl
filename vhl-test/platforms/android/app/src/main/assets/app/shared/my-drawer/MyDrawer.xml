@@ -4,8 +4,8 @@ Feel free to customize layouts and components to change how your app drawer look
 -->
 <GridLayout rows="auto, *" class="sidedrawer sidedrawer-left" loaded="onLoaded"
     xmlns:myDrawer="shared/my-drawer">
-    <StackLayout class="sidedrawer-header">
-        <Image src="~/images/logo-header.png" style="width:auto; height:50;"/>
+    <StackLayout class="sidedrawer-header" style="background-color:#0B92D1; padding-top:45;">
+        <Image src="~/images/logo-header.png" style="width:auto; height:50; verticalAlign: center;" verticalAlignment ="center"/>
     </StackLayout>
 
     <ScrollView row="1">
