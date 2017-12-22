@@ -1,4 +1,5 @@
 import { Observable } from "data/observable";
+var utilsModule = require("tns-core-modules/utils/utils");
 
 export class faqViewModel extends Observable {
     constructor() {
@@ -14,4 +15,9 @@ export class faqViewModel extends Observable {
         ];
 		this.set("questions", questions);
     }
+	
+	public donate = function () {
+		utilsModule.openUrl("https://donatenow.networkforgood.org/1411829?code=orange")
+
+	}
 }

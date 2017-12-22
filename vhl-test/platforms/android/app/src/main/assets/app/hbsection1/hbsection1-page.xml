@@ -60,7 +60,7 @@
         -->
         <nsDrawer:RadSideDrawer.mainContent>
             <GridLayout class="page-content">
-              <pdf:PDFView src="http://www.qandadevelopment.com/img/section1.pdf" load="{{ onLoad }}" />
+              <WebView height="10000" src="http://www.qandadevelopment.com/img/section1.pdf" />
             </GridLayout>
         </nsDrawer:RadSideDrawer.mainContent>
     </nsDrawer:RadSideDrawer>
