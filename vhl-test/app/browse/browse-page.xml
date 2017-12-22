@@ -18,7 +18,9 @@
             tap="onDrawerButtonTap"
             ios.position="left">
         </ActionItem>
-        <Label class="action-bar-title" text="Browse"></Label>
+        <StackLayout orientation="horizontal" horizontalAlignment="right" style="margin-right:10;">
+			<Button text="+" width="50" style="background-color:#0B92D1;" onTap="{{ toggleDropdown }}"/>
+		</StackLayout>
     </ActionBar>
 
     <!--
@@ -63,18 +65,20 @@
 					<rc:RadCalendar id="calendar" 
 						eventSource="{{ eventSource }}"
 						dateSelected="onDateSelected"
-						row="0"/>
+						row="0"
+						eventsViewMode="Inline|Popover"
+						/>
 					<lv:RadListView items="{{ myItems }}" rowHeight="44" row="1">
 						<lv:RadListView.itemTemplate>
 							<Label text="{{title}}" marginLeft="10" />
 						</lv:RadListView.itemTemplate>
 					</lv:RadListView>				</StackLayout>
-				<AbsoluteLayout horizontalAlignment="right" visibility="collapsed">
+				<AbsoluteLayout horizontalAlignment="right" visibility="{{ showDetails ? 'visible' : 'collapsed' }}">
 					<StackLayout top="0" height="30%" width="40%" style="background-color:#fff;" orientation="vertical">
 						<!-- Popup content ...--> 
-						<Button text="Add new event" width="100%" height="25%" class="btn-no-shadow"/>
+						<Button text="Add new event" width="100%" height="25%" class="btn-no-shadow" tap="{{ addEvent }}"/>
 						<Button text="Edit event" width="100%" height="25%" class="btn-no-shadow"/>
-						<Button text="Add new event" width="100%" height="25%" class="btn-no-shadow"/>
+						<Button text="Delete event" width="100%" height="25%" class="btn-no-shadow" tap="{{ deleteEvent }}"/>
 					</StackLayout>
 				</AbsoluteLayout>
             </GridLayout>

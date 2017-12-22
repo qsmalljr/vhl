@@ -43,5 +43,14 @@ export class BrowseViewModel extends Observable {
         var events: Array<calendarModule.CalendarEvent> = calendar.getEventsForDate(date);
         this.set("myItems", events);
     }
+	
+	public addEvent(eventData) {
+		//this event gets fired properly
+		console.log("WEEEEEEEEEEEEEEEEEEEEEEEEEEEE");
+	}
+	
+	public toggleDropdown(eventData){
+		this.set("showDetails", !this.get("showDetails"));
+	}
 }
 
