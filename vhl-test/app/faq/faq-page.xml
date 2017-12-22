@@ -59,12 +59,14 @@
         <nsDrawer:RadSideDrawer.mainContent>
 
           <StackLayout>
-            <ListView class="list-group" items="{{ sections }}" itemTap="tapAction" style="height:10000px">
+            <ListView class="list-group" items="{{ questions }}" style="height:10000px">
               <ListView.itemTemplate>
-                <FlexboxLayout flexDirection="row" class="list-group-item">
-                  <Label text="{{ imageSrc }}" class="thumb img-circle" fontWeight ="bold"/>
-                  <Label text="{{ name }}" class="list-group-item-heading" horizontalAlignment ="center" verticalAlignment="middle" style="width: 60%" />
+                
+                <FlexboxLayout flexDirection="row" class="list-group-item" textWrap ="true">
+                  <Label text="{{ name }}"  fontWeight ="bold" class="list-group-item-heading" horizontalAlignment ="center" verticalAlignment="middle" style="width: 60%" textWrap ="true"/>
+                  <Label text="{{ desc }}" textWrap ="true"/>
                 </FlexboxLayout>
+                
               </ListView.itemTemplate>
             </ListView>
           </StackLayout>
