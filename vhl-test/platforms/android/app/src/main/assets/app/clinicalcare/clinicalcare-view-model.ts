@@ -66,7 +66,10 @@ export class clinicalcareViewModel extends Observable {
 		this.set("sections2", sections2);
     }
 	
+	public donate = function () {
+		utilsModule.openUrl("https://donatenow.networkforgood.org/1411829?code=orange")
 
+	}
 
 		public onOpenSurvey = function () {
 			utilsModule.openUrl("https://docs.google.com/forms/d/1x35igCRZFCvcaeYmY_d5M2xYW1KMUCmLvjJuSQ4ZTbc/viewform?edit_requested=true")

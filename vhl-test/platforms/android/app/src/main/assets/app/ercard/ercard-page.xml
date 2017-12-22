@@ -7,7 +7,7 @@
     loaded="pageLoaded"
     xmlns="http://schemas.nativescript.org/tns.xsd">
 
-    <ActionBar class="action-bar">
+    <ActionBar class="action-bar" style="background-color:#0B92D1;">
         <!-- 
         Use the NavigationButton as a side-drawer button in Android because ActionItems are shown on the right side of the ActionBar
         -->
@@ -20,7 +20,10 @@
             tap="onDrawerButtonTap"
             ios.position="left">
         </ActionItem>
-        <Label class="action-bar-title" text="ER Card"></Label>
+        <StackLayout orientation="horizontal" horizontalAlignment="right" style="margin-right:10;">
+			<Button width="135" class="donate-button" text="Donate" style="margin-right:20;" tap="{{ donate }}"/>
+			<Image src="~/images/logo-header.png" style="width:auto; height:50;"/>
+		</StackLayout>
     </ActionBar>
 
     <!--

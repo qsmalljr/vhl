@@ -1,5 +1,6 @@
 import { Observable } from "data/observable";
 import frameModule = require("tns-core-modules/ui/frame");
+var utilsModule = require("tns-core-modules/utils/utils");
 
 export class handbookViewModel extends Observable {
     constructor() {
@@ -22,6 +23,11 @@ export class handbookViewModel extends Observable {
     public tapAction(args) {
 		//ADD NAVIGATION CODE HERE
 		frameModule.topmost().navigate("hbsection" + (args.index + 1) + "/hbsection" + (args.index + 1) + "-page");	
+	}
+	
+	public donate = function () {
+		utilsModule.openUrl("https://donatenow.networkforgood.org/1411829?code=orange")
+
 	}
 	
 }
