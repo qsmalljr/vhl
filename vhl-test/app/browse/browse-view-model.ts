@@ -31,9 +31,9 @@ export class BrowseViewModel extends Observable {
         }
 		*/
 		events.push(event);
+		
 		//convert events to dictionaries, stringify
 		//when reading in, convert back from dictionaries to event objects
-		
 		var dictEvent;
 		applicationSettingsModule.setNumber("length", events.length);
 		for(let i = 0; i < events.length; i++){
@@ -44,12 +44,11 @@ export class BrowseViewModel extends Observable {
 				endDate: events[i].endDate,
 			}
 			
-			//String niggers = new String("event" + i.toString());
+			
 			applicationSettingsModule.setString("event" + i, JSON.stringify(dictEvent));
 		}
-		//console.log(JSON.stringify(dictEvent));
-		//applicationSettingsModule.setString("events", JSON.stringify(dictEvent));
-		//console.log(JSON.parse(dictEvent));
+		
+		
 		var length = applicationSettingsModule.getNumber("length");
 		let tempEvents: Array<calendarModule.CalendarEvent> = new Array<calendarModule.CalendarEvent>();
 		//convert all back to events	
@@ -63,22 +62,15 @@ export class BrowseViewModel extends Observable {
 			//console.log(pooper);
 			var tempEvent: calendarModule.CalendarEvent;
 			
-			//dates could be in wrong format
+			//dates stored weird so create new date objects and use them in calendar events
+			//then push to calendar events array
 			tempEvent = new calendarModule.CalendarEvent(eventi.title, new Date(eventi.startDate), new Date(eventi.endDate));
 			tempEvents.push(tempEvent);
 		}
-
+		
+		//set source to show in calendar
 		this.source = tempEvents;
-		console.log(events.length);
 
-		
-		//console.log(events[events.length - 1].title);
-		//console.log(events[0].startDate);
-		
-		//ADD AN EVENT ON ANOTHER PAGE, RELOAD THIS PAGE WITH A METHOD THAT GETS ALL THE EVENTS AND POPULATES THE CALENDAR IN THE CONSTRUCTOR
-		//this.addEvent(event);
-		
-        //this.source = events;
     }
 	
 	public addEvent(eventData) {
