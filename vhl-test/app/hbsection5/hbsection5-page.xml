@@ -3,6 +3,8 @@
     navigatingTo="onNavigatingTo"  
     xmlns:nsDrawer="nativescript-pro-ui/sidedrawer"
     xmlns:myDrawer="shared/my-drawer"
+    xmlns:pdf="nativescript-pdf-view"
+    loaded="pageLoaded"
     xmlns="http://schemas.nativescript.org/tns.xsd">
 
     <ActionBar class="action-bar">
@@ -18,7 +20,7 @@
             tap="onDrawerButtonTap"
             ios.position="left">
         </ActionItem>
-        <Label class="action-bar-title" text="Handbook"></Label>
+        <Label class="action-bar-title" text="Section 5"></Label>
     </ActionBar>
 
     <!--
@@ -48,7 +50,7 @@
                 Learn more about custom components and how they can be used in this documentation article:
                 http://docs.nativescript.org/ui/basics#custom-components
                 -->
-                <myDrawer:MyDrawer selectedPage="Handbook"/>
+                <myDrawer:MyDrawer selectedPage="hbsection5"/>
             </StackLayout>
         </nsDrawer:RadSideDrawer.drawerContent>
 
@@ -57,16 +59,9 @@
         Always wrap content in a layout component.
         -->
         <nsDrawer:RadSideDrawer.mainContent>
-          <StackLayout>
-            <ListView class="list-group" items="{{ sections }}" itemTap="tapAction" style="height:10000px">
-              <ListView.itemTemplate>
-                <FlexboxLayout flexDirection="row" class="list-group-item">
-                  <Label text="{{ imageSrc }}" class="thumb img-circle" fontWeight ="bold"/>
-                  <Label text="{{ name }}" class="list-group-item-heading" horizontalAlignment ="center" verticalAlignment="middle" style="width: 60%" />
-                </FlexboxLayout>
-              </ListView.itemTemplate>
-            </ListView>
-          </StackLayout>
+            <GridLayout class="page-content">
+              <pdf:PDFView src="http://www.qandadevelopment.com/img/section5.pdf" load="{{ onLoad }}" />
+            </GridLayout>
         </nsDrawer:RadSideDrawer.mainContent>
     </nsDrawer:RadSideDrawer>
 </Page>
